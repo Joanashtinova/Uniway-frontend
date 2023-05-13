@@ -2,11 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
 
-  .imageContainer {
-    width: 300px; /* Adjust the width as needed */
-    height: 200px; /* Adjust the height as needed */
+.imageContainer {
+    width: 16rem; /* Adjust the width as needed */
+    height: 13rem; /* Adjust the height as needed */
     border: 1px solid white; /* Add a border if desired */
     display: flex;
     justify-content: center;
@@ -14,8 +14,60 @@
     object-fit: cover;
     border-radius: 40px;
     margin-right: 30px;
-  }
-  
-  .title {
+    margin: 0 auto;
+}
+
+.title {
     text-align: center; /* Center the text */
-  }
+}
+
+.hero_image {
+    /* The image used */
+    background-image: url("../public/images/Untitled_Artwork.PNG");
+
+    /* Set a specific height */
+    height: 83vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Add some padding and text styling for the content inside the hero image */
+    padding: 100px;
+    color: white;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.hero_text {
+    /* Center text vertically and horizontally within the .hero-image */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(213, 53, 0);
+    text-align: center;
+    font-size: 2em;
+}
+
+.hero_body {
+    /* border: 3px solid red; */
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.title_link {
+    color: black;
+    text-decoration: none;
+}
+.video_tumb {
+    margin-bottom: 40px;
+}
+
+.video_tumb:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
