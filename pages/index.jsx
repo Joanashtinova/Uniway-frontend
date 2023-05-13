@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
-import HomeComponent from "@/Components/HomeComponent";
-import VideoComponents from "@/Components/Video";
+import HomeComponent from "@/Components/HomeComponent.jsx";
 
 
 
