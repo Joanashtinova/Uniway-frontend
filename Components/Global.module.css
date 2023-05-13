@@ -1,0 +1,17 @@
+.videoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .imageContainer {
+    width: 300px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    border: 1px solid white; /* Add a border if desired */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-right: 20px;
+  }
