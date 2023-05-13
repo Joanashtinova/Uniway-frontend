@@ -14,6 +14,7 @@ export default function Home() {
       </Head>
       <main>
         <h1>Uniway is coming!!!!</h1>
+        <h5>Buff</h5>
       </main>
     </>
   );
