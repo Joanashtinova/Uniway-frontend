@@ -3,8 +3,13 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import HomeComponent from "@/Components/HomeComponent";
+import VideoComponents from "@/Components/Video";
+
+
 
 export default function Home() {
+  const videoUrl = 'https://example.com/video.mp4'; 
+
   return (
     <>
       <Head>
@@ -16,10 +21,9 @@ export default function Home() {
       <main>
         <h1>Uniway is coming!!!!</h1>
         <h5>Buff</h5>
+        <HomeComponent/> 
       </main>
-
-      <HomeComponent/>
-
     </>
   );
 }
+
