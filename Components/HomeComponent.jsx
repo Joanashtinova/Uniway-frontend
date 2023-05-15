@@ -31,7 +31,7 @@ function HomeComponent() {
 
   return (
     <div>
-      <div className={styles.hero_image} style={{ backgroundColor: "pink" }}>
+      <div className={styles.hero_image} style={{ backgroundColor: "ff5a5f" }}>
         <div className={styles.hero_text}>
           <h1
             style={{
