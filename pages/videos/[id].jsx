@@ -32,6 +32,13 @@ export default function Video() {
         <div>
             <img src={video.tumbnail_url} />
             <h1> {router.query.id}</h1>
+        <div class="container">
+            <iframe width= "1000px" height="580px"  src="https://www.youtube.com/embed/fBvLBXKGztY" 
+            title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encryptet-media;
+            gyroscope; picture-in-picture"
+            allowFullScreen></iframe>
         </div>
-    );
+        </div>
+    ); 
 }
