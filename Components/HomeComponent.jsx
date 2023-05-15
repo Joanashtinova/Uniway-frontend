@@ -33,8 +33,27 @@ function HomeComponent() {
     <div>
       <div className={styles.hero_image} style={{ backgroundColor: "pink" }}>
         <div className={styles.hero_text}>
-          <h1>Uniway</h1>
-          <p>Something is coming...</p>
+          <h1
+            style={{
+              fontSize: "7rem",
+              fontFamily: "Lilita One",
+              color: "#1282a2",
+              marginRight: "1199px",
+              marginTop: "-100px",
+            }}
+          >
+            Открий
+          </h1>
+          <h2
+            style={{
+              fontSize: "6rem",
+              color: "#1282a2",
+              marginTop: "-40px",
+              marginRight: "800px",
+            }}
+          >
+            страстта си
+          </h2>
         </div>
       </div>
       <div className={styles.hero_body}>

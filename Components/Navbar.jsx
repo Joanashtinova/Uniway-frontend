@@ -11,6 +11,8 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import Link from "next/link";
+import Logo from "../public/images/logo.png";
+import Image from "next/image";
 
 const pages = [
   { name: "Видеа", page: "videos" },
@@ -38,22 +40,21 @@ function Navbar() {
 
   return (
     <AppBar
-      position="static"
+      position="fixed"
       sx={{
         backgroundColor: "white",
         borderRadius: "60px",
         overflow: "hidden",
+        marginTop: "50px",
+        width: "80%",
+        marginRight: "150px",
       }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link href="/">
             <IconButton aria-label="Return to home page">
-              <img
-                src="https://o.remove.bg/downloads/60185352-19a4-43a5-9e55-e1e299bb6870/logo-removebg-preview-removebg-preview.png"
-                alt="Logo"
-                style={{ height: 90, marginRight: -6 }}
-              />
+              <Image src={Logo} alt="Logo" width={100} height={70} />
             </IconButton>
           </Link>
 
@@ -140,9 +141,9 @@ function Navbar() {
                 <Link
                   href={"/" + page.page}
                   style={{
-                    color: "yellow",
+                    color: "#0b3954",
                     textDecoration: "none",
-                    fontFamily: "Arial, Helvetica, sans-serif",
+                    fontFamily: "Bebas Neue",
                     fontSize: "17px",
                   }}
                 >
