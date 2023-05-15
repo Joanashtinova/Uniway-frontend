@@ -34,7 +34,9 @@ function HomeComponent() {
       <div className={styles.hero_image} style={{ backgroundColor: "#ffa69e" }}>
         <div className={styles.hero_text}>
           <h1 className={styles.hero_title}>Открий</h1>
-          <h2 className={styles.hero_sub_title}>страстта си</h2>
+          <h2 className={styles.hero_sub_title}>Страстта</h2>
+          <h2 className={styles.hero_se_titel}>си</h2>
+          <h1 className={styles.hero_sega_titel}>СЕГА</h1>
         </div>
       </div>
       <div className={styles.hero_body}>
