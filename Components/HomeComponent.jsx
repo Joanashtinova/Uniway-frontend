@@ -14,6 +14,10 @@ import { db, storage } from "@/Global/firebase";
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
 import SearchComponent from "@/Components/search";
 import RowComponent from "./RowComponent";
+import Logo from "../public/images/logo.png";
+import Homeimage1 from "./Homeimage1";
+import Nananan from "../public/images/burrrrrr.png";
+import Image from "next/image";
 
 function HomeComponent() {
   const [videos, setVideos] = useState([]);
@@ -31,13 +35,8 @@ function HomeComponent() {
 
   return (
     <div>
-      <div className={styles.hero_image} style={{ backgroundColor: "#ffa69e" }}>
-        <div className={styles.hero_text}>
-          <h1 className={styles.hero_title}>Открий</h1>
-          <h2 className={styles.hero_sub_title}>Страстта</h2>
-          <h2 className={styles.hero_se_titel}>си</h2>
-          <h1 className={styles.hero_sega_titel}>СЕГА</h1>
-        </div>
+      <div className={styles.hero_image} style={{ backgroundColor: "#adf7b6" }}>
+        <Image className={styles.bla} src={Nananan} width={500} height={200} />
       </div>
       <div className={styles.hero_body}>
         <RowComponent videos={videos} />
