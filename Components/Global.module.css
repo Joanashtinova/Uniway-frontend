@@ -56,16 +56,9 @@
 .hero_title {
   font-size: 5rem;
   font-family: "Josefin Sans", sans-serif;
-  color: rgb(0, 255, 166);
+  color: #e63946;
   margin-right: 1199px;
-  margin-top: -100px;
-  font-weight: 1000;
-}
-.hero_sub_title {
-  font-size: 6rem;
-  font-family: "Josefin Sans", sans-serif;
-  color: black;
-  margin-right: 500px;
+  margin-top: 0px;
   font-weight: 1000;
 }
 
@@ -88,4 +81,9 @@
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
+}
+
+.bla {
+  margin-top: 7rem;
+  margin-right: 46rem;
 }

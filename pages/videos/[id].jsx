@@ -5,9 +5,9 @@ import { collection, getDocs, query, limit, where } from "firebase/firestore";
 import { db, storage } from "@/Global/firebase";
 
 export default function Video() {
-    const router = useRouter();
+  const router = useRouter();
 
-    const [video, setVideo] = useState({});
+  const [video, setVideo] = useState({});
 
     const fetchData = async (title) => {
         const q = query(
@@ -21,8 +21,8 @@ export default function Video() {
         console.log(videoData);
     };
 
-    useLayoutEffect(() => {
-        //router.query.id is the name from the url
+  useLayoutEffect(() => {
+    //router.query.id is the name from the url
 
         if (router.query.id && router) {
             fetchData(router.query.id);
@@ -31,7 +31,7 @@ export default function Video() {
     return (
         <div>
             {/* <img src={video.tumbnail_url} /> */}
-            <h1> {router.query.id}</h1>
+            <h1> {video.title}</h1>
         <div class="container">
             <iframe width= "1000px" height="580px"  src={video.video_url}
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encryptet-media;

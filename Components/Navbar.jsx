@@ -147,6 +147,7 @@ function Navbar() {
                   href={"/" + page.page}
                   style={{
                     color: "#0b3954",
+
                     textDecoration: "none",
                     fontFamily: "Bebas Neue",
                     fontSize: "17px",
