@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Global.module.css";
 import Video from "./Video.jsx";
-import hero from "../public/images/Untitled_Artwork.PNG";
 import {
   getFirestore,
   collection,
