@@ -57,24 +57,10 @@
   font-family: "Josefin Sans", sans-serif;
   color: #e63946;
   margin-right: 1199px;
-  margin-top: -100px;
+  margin-top: 0px;
   font-weight: 1000;
 }
-.hero_sub_title {
-  font-size: 4rem;
-  font-family: "Josefin Sans", sans-serif;
-  color: #457b9d;
-  margin-right: 900px;
-  font-weight: 1000;
-  margin-top: -30px;
-}
-.hero_sega_titel {
-  font-size: 3rem;
-  font-family: "Josefin Sans", sans-serif;
-  color: #457b9d;
-  font-weight: 1000;
-  margin-right: 900px;
-}
+
 .hero_body {
   /* border: 3px solid red; */
   width: 90%;
@@ -94,4 +80,9 @@
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
+}
+
+.bla {
+  margin-top: 7rem;
+  margin-right: 46rem;
 }
