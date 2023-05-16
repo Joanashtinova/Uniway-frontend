@@ -10,13 +10,14 @@ function RowComponent(props) {
                 <Link href={"/videos"}>See More</Link>
             </div>
 
-            <div className={styles.videoContainer}>
+            <div className={styles.videoContainer}> 
                 {props.videos.map((video) => {
                     return (
                         <div>
                             <Video
                                 title={video.title}
                                 image={video.tumbnail_url}
+                                id={video.id}
                             />
                         </div>
                     );

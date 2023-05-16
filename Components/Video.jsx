@@ -6,9 +6,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Video(props) {
     return (
-        <div className={styles.video_tumb}>
+        <div className={styles.video_ThmbHorizontal}> {/* Updated CSS class */}
             <Link
-                href={"/videos/" + props.title.toLowerCase()}
+                href={"/videos/" + props.id.toLowerCase()}
                 className={styles.title_link}
             >
                 <img className={styles.imageContainer} src={props.image} />

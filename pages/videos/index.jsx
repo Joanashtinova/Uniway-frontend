@@ -4,48 +4,55 @@ import { useEffect, useState } from "react";
 import { db, storage } from "@/Global/firebase";
 import SearchComponent from "@/Components/search";
 import Video from "@/Components/Video";
+import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import { Grid } from "@mui/material";
 
 export default function Videos(pros) {
-    const [videos, setVideos] = useState([]);
-    const [filteredVideos, setFilteredVideos] = useState([]);
+  const [videos, setVideos] = useState([]);
+  const [filteredVideos, setFilteredVideos] = useState([]);
 
-    const handleNewSearch = (searchTerm) => {
-        if (searchTerm.length > 0) {
-            let newVideos = videos;
+  const handleNewSearch = (searchTerm) => {
+    if (searchTerm.length > 0) {
+      let newVideos = videos;
 
-            newVideos = newVideos.filter((x) =>
-                x.title.toLowerCase().includes(searchTerm.toLowerCase())
-            );
+      newVideos = newVideos.filter((x) =>
+        x.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
 
-            setFilteredVideos(newVideos);
-        } else {
-            setFilteredVideos(videos);
-        }
-    };
+      setFilteredVideos(newVideos);
+    } else {
+      setFilteredVideos(videos);
+    }
+  };
 
-    const fetchData = async () => {
-        const data = await getDocs(query(collection(db, "videos"), limit(4)));
-        setVideos(data.docs.map((doc) => doc.data()));
-        setFilteredVideos(data.docs.map((doc) => doc.data()));
-    };
+  const fetchData = async () => {
+    const data = await getDocs(query(collection(db, "videos"), limit(4)));
+    setVideos(data.docs.map((doc) => doc.data()));
+    setFilteredVideos(data.docs.map((doc) => doc.data()));
+  };
 
-    useLayoutEffect(() => {
-        fetchData();
-    }, []);
+  useLayoutEffect(() => {
+    fetchData();
+  }, []);
 
-    return (
-        <div>
-            <SearchComponent
-                videos={videos}
-                handleNewSearch={handleNewSearch}
-            />
-            {filteredVideos.map((video) => {
-                return (
-                    <div>
-                        <Video title={video.title} image={video.tumbnail_url} />
-                    </div>
-                );
-            })}
-        </div>
-    );
+  return (
+    <div style={{ height: "100%" }}>
+      <Grid container spacing={2}>
+        <Grid item xs={12} md={12} style={{ marginTop: "150px" }}>
+          <SearchComponent videos={videos} handleNewSearch={handleNewSearch} />
+        </Grid>
+        {filteredVideos.map((video) => {
+          return (
+            <Grid item xs={6} md={3}>
+              <Video
+                title={video.title}
+                image={video.tumbnail_url}
+                id={video.id}
+              />
+            </Grid>
+          );
+        })}
+      </Grid>
+    </div>
+  );
 }

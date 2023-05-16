@@ -3,7 +3,7 @@ import Navbar from "@/Components/Navbar";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div style={{ backgroundColor: "pink" }}>
+    <div style={{ backgroundColor: "pink", height: "100%" }}>
       <Navbar />
       <Component {...pageProps} />
     </div>
