@@ -14,7 +14,6 @@ import Link from "next/link";
 import Logo from "../public/images/logo.png";
 import Image from "next/image";
 
-
 const pages = [
   { name: "Видеа", page: "videos" },
   { name: "Калкулатор", page: "calculator" },
@@ -104,11 +103,13 @@ function Navbar() {
                   >
                     <Typography textAlign="center">{page.name}</Typography>
                   </Link>
-                <Link href="/calculator" style={{ color: "black", textDecoration: "none" }}>
-                  <Typography textAlign="center">Calculator</Typography>
-                </Link>
+                  <Link
+                    href="/calculator"
+                    style={{ color: "black", textDecoration: "none" }}
+                  >
+                    <Typography textAlign="center">Calculator</Typography>
+                  </Link>
                 </MenuItem>
-              
               ))}
             </Menu>
           </Box>
@@ -149,7 +150,7 @@ function Navbar() {
                     color: "#0b3954",
 
                     textDecoration: "none",
-                    fontFamily: "Bebas Neue",
+                    fontFamily: "",
                     fontSize: "17px",
                   }}
                 >
