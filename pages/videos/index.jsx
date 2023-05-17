@@ -26,7 +26,7 @@ export default function Videos(pros) {
   };
 
   const fetchData = async () => {
-    const data = await getDocs(query(collection(db, "videos"), limit(4)));
+    const data = await getDocs(query(collection(db, "videos")));
     setVideos(data.docs.map((doc) => doc.data()));
     setFilteredVideos(data.docs.map((doc) => doc.data()));
   };

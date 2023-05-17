@@ -8,8 +8,8 @@
 }
 
 .imageContainer {
-  width: 16rem; /* Adjust the width as needed */
-  height: 13rem; /* Adjust the height as needed */
+  width: 20rem; /* Adjust the width as needed */
+  height: 15rem; /* Adjust the height as needed */
   border: 1px solid white; /* Add a border if desired */
   display: flex;
   justify-content: center;
@@ -22,6 +22,8 @@
 
 .title {
   text-align: center; /* Center the text */
+  font-size: 23px;
+  font-family: Vindigater;
 }
 
 .hero_image {
