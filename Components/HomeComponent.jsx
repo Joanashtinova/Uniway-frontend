@@ -38,14 +38,18 @@ function HomeComponent() {
     <div>
       <div
         className={styles.hero_image}
-        style={{ backgroundColor: "#adf7b6", height: "800px" }}
+        style={{
+          backgroundColor: "#adf7b6",
+          height: "1000px",
+          width: "1950px",
+        }}
       >
         <Image className={styles.bla} src={Nananan} width={500} height={200} />
         <Image
           className={styles.Momiche}
           src={Momiche}
           width={640}
-          height={600}
+          height={700}
         />
         <h4 className={styles.teeext}>
           Най-доброто за един млад човек е ... Вдъхновението! Всяко наше видео
@@ -56,8 +60,8 @@ function HomeComponent() {
         className={styles.hero_body}
         style={{
           backgroundColor: "#087e8b",
-          height: "800px",
-          width: "1520px",
+          height: "1000px",
+          width: "1950px",
           marginTop: "-80px",
         }}
       >
