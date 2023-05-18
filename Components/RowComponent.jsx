@@ -6,25 +6,24 @@ import Link from "next/link";
 function RowComponent(props) {
   return (
     <div>
-      <div style={{ marginBottom: "20px" }}>
-        <Link href={"/videos"} className={styles.baduf}>
-          Виж всички видеа
-        </Link>
-      </div>
+      <Grid container spacing={2}>
+        <Grid item xs={12} md={12} style={{ marginBottom: "20px" }}>
+          <Link href={"/videos"}>Виж всички видеа</Link>
+        </Grid>
 
-      <div className={styles.videoContainer}>
         {props.videos.map((video) => {
+          <Grid>className={styles.videoContainer}</Grid>;
           return (
-            <div>
+            <Grid item xs={6} md={3}>
               <Video
                 title={video.title}
                 image={video.tumbnail_url}
                 id={video.id}
               />
-            </div>
+            </Grid>
           );
         })}
-      </div>
+      </Grid>
     </div>
   );
 }
