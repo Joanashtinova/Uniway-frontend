@@ -7,6 +7,7 @@ import { Style } from "@mui/icons-material";
 import styles from "./Global.module.css";
 import { Grid } from "@mui/material";
 import Video from "@/Components/Video";
+import Article from "./Article";
 
 export default function VideoPage(props) {
   const [video, setVideo] = useState({});
@@ -43,14 +44,13 @@ export default function VideoPage(props) {
               gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
+          <h1 style={{ fontFamily: "Arial, sans-serif" }}>{video.title}</h1>
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <p className={styles.bubbleContent}>{video.article_text}</p>
+          <Article text={video.article_text} />
         </Grid>
-        <Grid item xs={12} md={6}>
-          <h1>{video.title}</h1>
-        </Grid>
+        <Grid item xs={12} md={6}></Grid>
       </Grid>
     </div>
   );

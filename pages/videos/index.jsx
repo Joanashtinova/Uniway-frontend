@@ -44,15 +44,11 @@ export default function Videos(pros) {
         </Grid>
         {filteredVideos.map((video) => (
           <Grid item xs={6} md={3} key={video.id}>
-            <Grid container spacing={2}>
-              <Grid item xs={6} md={3}>
-                <Video
-                  title={video.title}
-                  image={video.tumbnail_url}
-                  id={video.id}
-                />
-              </Grid>
-            </Grid>
+            <Video
+              title={video.title}
+              image={video.tumbnail_url}
+              id={video.id}
+            />
           </Grid>
         ))}
       </Grid>
