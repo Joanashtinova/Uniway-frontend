@@ -15,153 +15,155 @@ import Logo from "../public/images/logo.png";
 import Image from "next/image";
 
 const pages = [
-  { name: "Видеа", page: "videos" },
-  { name: "Калкулатор", page: "calculator" },
+    { name: "Видеа", page: "videos" },
+    { name: "Калкулатор", page: "calculator" },
 ];
 
 function Navbar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+    const [anchorElNav, setAnchorElNav] = React.useState(null);
+    const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+    const handleOpenNavMenu = (event) => {
+        setAnchorElNav(event.currentTarget);
+    };
+    const handleOpenUserMenu = (event) => {
+        setAnchorElUser(event.currentTarget);
+    };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+    const handleCloseNavMenu = () => {
+        setAnchorElNav(null);
+    };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+    const handleCloseUserMenu = () => {
+        setAnchorElUser(null);
+    };
+    const styles = {
+        container: {
+            position: "relative",
+            paddingTop: "30px",
+        },
 
-  return (
-    <AppBar
-      position="fixed"
-      sx={{
-        backgroundColor: "white",
-        borderRadius: "60px",
-        overflow: "hidden",
-        marginTop: "50px",
-        width: "80%",
-        marginRight: "150px",
-      }}
-    >
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Link href="/">
-            <IconButton aria-label="Return to home page">
-              <Image src={Logo} alt="Logo" width={100} height={70} />
-            </IconButton>
-          </Link>
+        navbar: {
+            border: "3px solid red",
+            justifyContent: "space-between",
+            position: "sticky",
+            width: "90%",
+            backgroundColor: "#fff",
+            zIndex: 100,
+            padding: "10px 0",
+            margin: "0 auto",
+            borderRadius: "60px",
+            display: "flex",
+        },
+        logo: {
+            margin: 0,
+            padding: "0 20px",
+            float: "left",
+        },
+        nav: {
+            // border: "3px solid red",
 
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "flex", md: "none" },
-            }}
-          >
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-                  <Link
-                    href={"/" + page.page}
-                    style={{
-                      color: "black",
-                      textDecoration: "none",
-                    }}
-                  >
-                    <Typography textAlign="center">{page.name}</Typography>
-                  </Link>
-                  <Link
-                    href="/calculator"
-                    style={{ color: "black", textDecoration: "none" }}
-                  >
-                    <Typography textAlign="center">Calculator</Typography>
-                  </Link>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            Uniway
-          </Typography>
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "none", md: "flex" },
-            }}
-          >
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                <Link
-                  href={"/" + page.page}
-                  style={{
-                    color: "#0b3954",
+            float: "right",
+            marginRight: "40px",
+            display: "flex",
+            top: "0",
+            alignSelf: "right",
+        },
+        ul: {
+            margin: 0,
+            padding: 0,
+            listStyle: "none",
+        },
+        li: {
+            display: "inline-block",
+            marginLeft: "20px",
+        },
+        a: {
+            color: "black",
+            textDecoration: "none",
+        },
+    };
+    return (
+        <div style={styles.container}>
+            <div style={styles.navbar}>
+                <div style={{ marginLeft: "40px" }}>
+                    <Link href="/">
+                        <Image src={Logo} alt="Logo" width={100} height={70} />
+                    </Link>
+                </div>
+                <nav style={styles.nav}>
+                    <Link
+                        href={"/videos"}
+                        style={{
+                            color: "#0b3954",
+                            textDecoration: "none",
+                            fontFamily: "",
+                            fontSize: "17px",
+                            marginRight: "23px",
+                        }}
+                    >
+                        Видеа
+                    </Link>{" "}
+                    <Link
+                        href={"/calcolator"}
+                        style={{
+                            color: "#0b3954",
 
-                    textDecoration: "none",
-                    fontFamily: "",
-                    fontSize: "17px",
-                  }}
-                >
-                  <p textAlign="center">{page.name}</p>
-                </Link>
-              </Button>
-            ))}
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
-  );
+                            textDecoration: "none",
+                            fontFamily: "",
+                            fontSize: "17px",
+                            marginRight: "23px",
+                        }}
+                    >
+                        <p textAlign="center">Калкулатор</p>
+                    </Link>{" "}
+                </nav>
+            </div>
+            {/* // <AppBar
+        //     position="fixed"
+        //     sx={{
+        //         backgroundColor: "white",
+        //         borderRadius: "60px",
+        //         overflow: "hidden",
+        //         marginTop: "50px",
+        //     }}
+        // >
+        //     <Container maxWidth="xl">
+        //         <Toolbar disableGutters>
+        //             <Link href="/">
+        //                 <Image src={Logo} alt="Logo" width={100} height={70} />
+        //             </Link>
+        //             <Box
+        //                 sx={{
+        //                     flexGrow: 1,
+        //                     display: { xs: "none", md: "flex" },
+        //                 }}
+        //             >
+        //                 {pages.map((page) => (
+        //                     <Button
+        //                         key={page}
+        //                         onClick={handleCloseNavMenu}
+        //                         sx={{ my: 2, color: "white", display: "block" }}
+        //                     >
+        //                         <Link
+        //                             href={"/" + page.page}
+        //                             style={{
+        //                                 color: "#0b3954",
+
+        //                                 textDecoration: "none",
+        //                                 fontFamily: "",
+        //                                 fontSize: "17px",
+        //                             }}
+        //                         >
+        //                             <p textAlign="center">{page.name}</p>
+        //                         </Link>
+        //                     </Button>
+        //                 ))}
+        //             </Box>
+        //         </Toolbar>
+        //     </Container>
+        // </AppBar> */}
+        </div>
+    );
 }
 export default Navbar;
