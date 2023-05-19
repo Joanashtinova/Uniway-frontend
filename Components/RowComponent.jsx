@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Global.module.css";
 import Video from "./Video.jsx";
-import Link from "next/link";
+import Link from "next/li
 import { Grid } from "@mui/material";
 import button from "../public/images/buton.png";
 import Image from "next/image";
