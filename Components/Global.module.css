@@ -91,7 +91,7 @@
 }
 
 .izgledaj {
-  margin-top: 12rem;
+  margin-top: -10rem;
   margin-left: 9rem;
 }
 
@@ -125,4 +125,5 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 19px;
   text-align: justify;
+
 }

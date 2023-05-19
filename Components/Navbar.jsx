@@ -109,6 +109,7 @@ function Navbar() {
                         style={{
                             color: "#0b3954",
 
+
                             textDecoration: "none",
                             fontFamily: "",
                             fontSize: "17px",
@@ -165,5 +166,6 @@ function Navbar() {
         // </AppBar> */}
         </div>
     );
+
 }
 export default Navbar;
