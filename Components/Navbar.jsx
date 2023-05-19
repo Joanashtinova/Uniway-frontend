@@ -152,6 +152,7 @@ function Navbar() {
                     textDecoration: "none",
                     fontFamily: "",
                     fontSize: "17px",
+                    marginTop: "2px",
                   }}
                 >
                   <p textAlign="center">{page.name}</p>

@@ -91,7 +91,7 @@
 }
 
 .izgledaj {
-  margin-top: 12rem;
+  margin-top: -10rem;
   margin-left: 9rem;
 }
 
@@ -106,4 +106,14 @@
   margin-top: -13rem;
   margin-right: 50rem;
   font-size: 1, 2rem;
+}
+
+.lll {
+  margin-top: 6rem;
+  margin-left: 240px;
+}
+.text4 {
+  font-family: Josefin Sans ", sans-serif";
+  font-weight: 800;
+  margin-left: -6rem;
 }
