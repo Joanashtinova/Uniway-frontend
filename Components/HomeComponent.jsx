@@ -53,6 +53,10 @@ function HomeComponent() {
           width={600}
           height={600}
         />
+        <h4 className={styles.teeext}>
+          Най-доброто за един млад човек е ... Вдъхновението! Всяко наше видео
+          ви дава точно това.
+        </h4>
       </div>
       <div
         className={styles.hero_body}
@@ -63,18 +67,12 @@ function HomeComponent() {
           marginTop: "-5rem",
         }}
       >
-        <div>
-          <Image
-            className={styles.izgledaj}
-            src={Izgledaj}
-            width={500}
-            height={150}
-          />
-          <h4 className={styles.teeext}>
-            Най-доброто за един млад човек е ... Вдъхновението! Всяко наше видео
-            ви дава точно това.
-          </h4>
-        </div>
+        <Image
+          className={styles.izgledaj}
+          src={Izgledaj}
+          width={500}
+          height={150}
+        />
 
         <Image className={styles.lll} src={blabla} width={600} height={600} />
 
