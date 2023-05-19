@@ -107,3 +107,22 @@
   margin-right: 50rem;
   font-size: 1, 2rem;
 }
+
+.bubbleContainer {
+  display: inline-block;
+  position: relative;
+  margin-top: 100px;
+
+}
+.bubbleContent {
+  background-color: #F1F1F1;
+  border-radius: 30px;
+  padding: 50px;
+  max-width: 1200px;
+  margin-right: 25px;
+  margin-left: 75px;
+  margin-top: 150px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 19px;
+  text-align: justify;
+}

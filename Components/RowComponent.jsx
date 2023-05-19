@@ -7,7 +7,6 @@ import { Grid } from "@mui/material";
 function RowComponent(props) {
   return (
     <div>
-
       <Grid container spacing={2}>
         <Grid item xs={12} md={12} style={{ marginBottom: "20px" }}>
           <Link href={"/videos"}>Виж всички видеа</Link>
@@ -17,18 +16,15 @@ function RowComponent(props) {
           <Grid>className={styles.videoContainer}</Grid>;
           return (
             <Grid item xs={6} md={3}>
-
               <Video
                 title={video.title}
                 image={video.tumbnail_url}
                 id={video.id}
               />
-
             </Grid>
           );
         })}
       </Grid>
-
     </div>
   );
 }
