@@ -19,6 +19,8 @@ import Nananan from "../public/images/burrrrrr.png";
 import Image from "next/image";
 import Izgledaj from "../public/images/izgledaj.png";
 import Momiche from "../public/images/image_home.png";
+import blabla from "../public/images/lll.png";
+import TextJ from "../public/images/text.png";
 
 function HomeComponent() {
   const [videos, setVideos] = useState([]);
@@ -40,16 +42,16 @@ function HomeComponent() {
         className={styles.hero_image}
         style={{
           backgroundColor: "#adf7b6",
-          height: "1000px",
-          width: "1950px",
+          height: "800px",
+          width: "100%",
         }}
       >
         <Image className={styles.bla} src={Nananan} width={500} height={200} />
         <Image
           className={styles.Momiche}
           src={Momiche}
-          width={640}
-          height={700}
+          width={600}
+          height={600}
         />
         <h4 className={styles.teeext}>
           Най-доброто за един млад човек е ... Вдъхновението! Всяко наше видео
@@ -60,9 +62,9 @@ function HomeComponent() {
         className={styles.hero_body}
         style={{
           backgroundColor: "#087e8b",
-          height: "1000px",
-          width: "1950px",
-          marginTop: "-80px",
+          height: "1100px",
+          width: "100%",
+          marginTop: "-5rem",
         }}
       >
         <Image
@@ -71,6 +73,8 @@ function HomeComponent() {
           width={500}
           height={150}
         />
+
+        <Image className={styles.lll} src={blabla} width={600} height={600} />
 
         <RowComponent className={styles.videobox} videos={videos} />
       </div>

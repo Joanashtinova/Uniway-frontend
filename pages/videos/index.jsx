@@ -1,3 +1,4 @@
+//this is videos Page/
 import React, { useLayoutEffect } from "react";
 import { collection, getDocs, query, limit } from "firebase/firestore";
 import { useEffect, useState } from "react";
@@ -41,17 +42,15 @@ export default function Videos(pros) {
         <Grid item xs={12} md={12} style={{ marginTop: "150px" }}>
           <SearchComponent videos={videos} handleNewSearch={handleNewSearch} />
         </Grid>
-        {filteredVideos.map((video) => {
-          return (
-            <Grid item xs={6} md={3}>
-              <Video
-                title={video.title}
-                image={video.tumbnail_url}
-                id={video.id}
-              />
-            </Grid>
-          );
-        })}
+        {filteredVideos.map((video) => (
+          <Grid item xs={6} md={3} key={video.id}>
+            <Video
+              title={video.title}
+              image={video.tumbnail_url}
+              id={video.id}
+            />
+          </Grid>
+        ))}
       </Grid>
     </div>
   );
