@@ -44,15 +44,16 @@ function Navbar() {
         },
 
         navbar: {
+            border: "3px solid red",
+            justifyContent: "space-between",
             position: "sticky",
-            top: "-20px",
             width: "90%",
             backgroundColor: "#fff",
-            color: "black",
             zIndex: 100,
             padding: "10px 0",
             margin: "0 auto",
             borderRadius: "60px",
+            display: "flex",
         },
         logo: {
             margin: 0,
@@ -60,7 +61,13 @@ function Navbar() {
             float: "left",
         },
         nav: {
+            // border: "3px solid red",
+
             float: "right",
+            marginRight: "40px",
+            display: "flex",
+            top: "0",
+            alignSelf: "right",
         },
         ul: {
             margin: 0,
@@ -79,40 +86,37 @@ function Navbar() {
     return (
         <div style={styles.container}>
             <div style={styles.navbar}>
-                <Link href="/">
-                    <Image src={Logo} alt="Logo" width={100} height={70} />
-                </Link>
+                <div style={{ marginLeft: "40px" }}>
+                    <Link href="/">
+                        <Image src={Logo} alt="Logo" width={100} height={70} />
+                    </Link>
+                </div>
                 <nav style={styles.nav}>
-                    <ul style={styles.ul}>
-                        <li style={styles.li}>
-                            <Link
-                                href={"/videos"}
-                                style={{
-                                    color: "#0b3954",
+                    <Link
+                        href={"/videos"}
+                        style={{
+                            color: "#0b3954",
+                            textDecoration: "none",
+                            fontFamily: "",
+                            fontSize: "17px",
+                            marginRight: "23px",
+                        }}
+                    >
+                        Видеа
+                    </Link>{" "}
+                    <Link
+                        href={"/calcolator"}
+                        style={{
+                            color: "#0b3954",
 
-                                    textDecoration: "none",
-                                    fontFamily: "",
-                                    fontSize: "17px",
-                                }}
-                            >
-                                <p textAlign="center">Видеа</p>
-                            </Link>{" "}
-                        </li>
-                        <li style={styles.li}>
-                            <Link
-                                href={"/calcolator"}
-                                style={{
-                                    color: "#0b3954",
-
-                                    textDecoration: "none",
-                                    fontFamily: "",
-                                    fontSize: "17px",
-                                }}
-                            >
-                                <p textAlign="center">Калкулатор</p>
-                            </Link>{" "}
-                        </li>
-                    </ul>
+                            textDecoration: "none",
+                            fontFamily: "",
+                            fontSize: "17px",
+                            marginRight: "23px",
+                        }}
+                    >
+                        <p textAlign="center">Калкулатор</p>
+                    </Link>{" "}
                 </nav>
             </div>
             {/* // <AppBar
