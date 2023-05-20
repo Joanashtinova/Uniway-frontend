@@ -56,6 +56,7 @@ function HomeComponent() {
                         src={Strasttezt}
                         width={500}
                         height={200}
+                        layout="responsive"
                     />
                     <h4 className={styles.teeext} style={{ marginTop: "20px" }}>
                         Най-доброто за един млад човек е ... Вдъхновението!
@@ -68,6 +69,7 @@ function HomeComponent() {
                         src={MomicheClouds}
                         width={600}
                         height={600}
+                        layout="responsive"
                     />
                 </Grid>
             </Grid>
@@ -88,6 +90,7 @@ function HomeComponent() {
                         src={Izgledaj}
                         width={500}
                         height={150}
+                        layout="responsive"
                     />
                 </Grid>
 
@@ -97,6 +100,7 @@ function HomeComponent() {
                         src={genZgirl}
                         width={600}
                         height={600}
+                        layout="responsive"
                     />
                 </Grid>
                 <Grid item xs={12} md={12}>
