@@ -44,7 +44,6 @@ function Navbar() {
         },
 
         navbar: {
-            border: "3px solid red",
             justifyContent: "space-between",
             position: "sticky",
             width: "90%",
@@ -68,6 +67,7 @@ function Navbar() {
             display: "flex",
             top: "0",
             alignSelf: "right",
+            marginTop: "20px",
         },
         ul: {
             margin: 0,
@@ -99,7 +99,7 @@ function Navbar() {
                             textDecoration: "none",
                             fontFamily: "",
                             fontSize: "17px",
-                            marginRight: "23px",
+                            marginRight: "30px",
                         }}
                     >
                         Видеа
@@ -109,14 +109,13 @@ function Navbar() {
                         style={{
                             color: "#0b3954",
 
-
                             textDecoration: "none",
                             fontFamily: "",
                             fontSize: "17px",
-                            marginRight: "23px",
+                            marginRight: "30px",
                         }}
                     >
-                        <p textAlign="center">Калкулатор</p>
+                        Калкулатор
                     </Link>{" "}
                 </nav>
             </div>
@@ -166,6 +165,5 @@ function Navbar() {
         // </AppBar> */}
         </div>
     );
-
 }
 export default Navbar;
