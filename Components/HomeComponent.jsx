@@ -77,7 +77,7 @@ function HomeComponent() {
                 style={{
                     backgroundColor: "#087e8b",
                     // height: "800px",
-                    // width: "86%",
+                    width: "100%",
                     margin: "0 auto",
                     marginTop: "20px",
                 }}
