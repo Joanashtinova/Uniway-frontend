@@ -37,78 +37,78 @@ function HomeComponent() {
         fetchData();
     }, []);
 
+  const HomeComponent = ({ videos }) => {
     return (
-        <div>
-            <Grid
-                container
-                spacing={2}
-                style={{
-                    backgroundColor: "#adf7b6",
-                    // height: "800px",
-                    width: "86%",
-                    margin: "0 auto",
-                    marginTop: "20px",
-                }}
-            >
-                <Grid item xs={12} md={6}>
-                    <Image
-                        className={styles.bla}
-                        src={Strasttezt}
-                        width={500}
-                        height={200}
-                        layout="responsive"
-                    />
-                    <h4 className={styles.teeext} style={{ marginTop: "20px" }}>
-                        Най-доброто за един млад човек е ... Вдъхновението!
-                        Всяко наше видео ви дава точно това.
-                    </h4>
-                </Grid>
-                <Grid item xs={12} md={6}>
-                    <Image
-                        className={styles.Momiche}
-                        src={MomicheClouds}
-                        width={600}
-                        height={600}
-                        layout="responsive"
-                    />
-                </Grid>
-            </Grid>
-            <Grid
-                container
-                spacing={2}
-                style={{
-                    backgroundColor: "#087e8b",
-                    // height: "800px",
-                    width: "100%",
-                    margin: "0 auto",
-                    marginTop: "20px",
-                }}
-            >
-                <Grid item xs={12} md={6}>
-                    <Image
-                        className={styles.izgledaj}
-                        src={Izgledaj}
-                        width={500}
-                        height={150}
-                        layout="responsive"
-                    />
-                </Grid>
+      <div>
+        <div
+          className={styles.hero_image}
+          style={{
+            backgroundColor: "#adf7b6",
+            height: "900px",
+            width: "100%",
+          }}
+        >
+          <div className={styles.grid_container}>
+            <div className={styles.grid_item}>
+              <img
+                className={styles.bla}
+                src={Nananan}
+                alt="Nananan"
+                width={500}
+                height={200}
+              />
+            </div>
+            <div className={styles.grid_item}>
+              <img
+                className={styles.Momiche}
+                src={Momiche}
+                alt="Momiche"
+                width={600}
+                height={600}
+              />
+            </div>
 
-                <Grid item xs={12} md={6}>
-                    <Image
-                        // className={styles.lll}
-                        src={genZgirl}
-                        width={600}
-                        height={600}
-                        layout="responsive"
-                    />
-                </Grid>
-                <Grid item xs={12} md={12}>
-                    <RowComponent videos={videos} />
-                </Grid>
+            <h4 className={styles.teeext}>
+              Най-доброто за един млад човек е ... Вдъхновението! Всяко наше
+              видео ви дава точно това.
+            </h4>
+          </div>
+          <div
+            className={styles.hero_body}
+            style={{
+              backgroundColor: "#087e8b",
+              height: "130%",
+              width: "100%",
+              marginTop: "-5rem",
+            }}
+          >
+            <Grid item xs={12} md={3} className={styles.grid_container}>
+              <div className={styles.grid_item}>
+                <img
+                  className={styles.izgledaj}
+                  src={Izgledaj}
+                  alt="Izgledaj"
+                  width={500}
+                  height={150}
+                />
+              </div>
+              <div className={styles.grid_item}>
+                <img
+                  className={styles.lll}
+                  src={blabla}
+                  alt="blabla"
+                  width={600}
+                  height={600}
+                />
+              </div>
+              <div className={styles.grid_item}>
+                <RowComponent className={styles.videobox} videos={videos} />
+              </div>
             </Grid>
+          </div>
         </div>
+      </div>
     );
-}
+  };
 
 export default HomeComponent;
