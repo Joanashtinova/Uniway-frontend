@@ -7,18 +7,23 @@ import button from "../public/images/buton.png";
 import Image from "next/image";
 
 function RowComponent(props) {
-  return (
-    <div>
-      <Grid container spacing={2}>
-        <Grid item xs={12} md={12} style={{ marginBottom: "-120px" }}>
-          <Link
-            href={"/videos"}
-            className={styles}
-            style={{ marginTop: "-7rem" }}
-          >
-            <Image src={button} alt="button" width={300} height={200} />
-          </Link>
-        </Grid>
+    return (
+        <div>
+            <Grid container spacing={2}>
+                <Grid item xs={12} md={12} style={{ marginBottom: "-120px" }}>
+                    <Link
+                        href={"/videos"}
+                        className={styles}
+                        style={{ marginTop: "-7rem" }}
+                    >
+                        <Image
+                            src={button}
+                            alt="button"
+                            width={300}
+                            height={200}
+                        />
+                    </Link>
+                </Grid>
 
         {props.videos.map((video) => {
           <Grid>className={styles.videoContainer}</Grid>;
@@ -30,11 +35,8 @@ function RowComponent(props) {
                 id={video.id}
               />
             </Grid>
-          );
-        })}
-      </Grid>
-    </div>
-  );
+        </div>
+    );
 }
 
 export default RowComponent;

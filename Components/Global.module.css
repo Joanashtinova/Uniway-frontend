@@ -2,130 +2,131 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 .videoContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foo {
+    white-space: "pre-wrap";
 }
 
 .imageContainer {
-  width: 20rem; /* Adjust the width as needed */
-  height: 15rem; /* Adjust the height as needed */
-  border: 1px solid white; /* Add a border if desired */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  object-fit: cover;
-  border-radius: 40px;
-  margin-right: 30px;
-  margin: 0 auto;
+    width: 20rem; /* Adjust the width as needed */
+    height: 15rem; /* Adjust the height as needed */
+    border: 1px solid white; /* Add a border if desired */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 40px;
+    margin-right: 30px;
+    margin: 0 auto;
 }
 
 .title {
-  text-align: center; /* Center the text */
-  font-size: 23px;
-  font-family: Vindigater;
+    text-align: center; /* Center the text */
+    font-size: 23px;
+    font-family: Vindigater;
 }
 
 .hero_image {
-  /* The image used */
+    /* The image used */
 
-  /* Set a specific height */
-  height: 83vh;
+    /* Set a specific height */
+    height: 83vh;
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  /* Add some padding and text styling for the content inside the hero image */
-  padding: 100px;
-  /* color: #1282a2;  */
-  text-align: center;
-  margin-bottom: 80px;
+    /* Add some padding and text styling for the content inside the hero image */
+    padding: 100px;
+    /* color: #1282a2;  */
+    text-align: center;
+    margin-bottom: 80px;
 }
 
 .hero_text {
-  /* Center text vertically and horizontally within the .hero-image */
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  color: rgb(213, 53, 0);
-  text-align: center;
-  font-size: 2em;
+    /* Center text vertically and horizontally within the .hero-image */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(213, 53, 0);
+    text-align: center;
+    font-size: 2em;
 }
 
 .hero_title {
-  font-size: 5rem;
-  font-family: "Josefin Sans", sans-serif;
-  color: #e63946;
-  margin-right: 1199px;
-  margin-top: 0px;
-  font-weight: 1000;
+    font-size: 5rem;
+    font-family: "Josefin Sans", sans-serif;
+    color: #e63946;
+    margin-right: 1199px;
+    margin-top: 0px;
+    font-weight: 1000;
 }
 
 .hero_body {
-  /* border: 3px solid red; */
-  width: 90%;
-  margin: 0 auto;
-  margin-bottom: 150px;
+    /* border: 3px solid red; */
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 150px;
 }
 
 .title_link {
-  color: black;
-  text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 .video_tumb {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .video_tumb:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .bla {
-  margin-top: 7rem;
-  margin-right: 46rem;
+    margin-top: 7rem;
+    margin-right: 46rem;
 }
 
 .izgledaj {
-  margin-top: -10rem;
-  margin-left: 9rem;
+    /* margin-top: -10rem;
+    margin-left: 9rem; */
 }
 
 .Momiche {
-  margin-left: 45rem;
-  margin-top: -22rem;
+    /* margin-left: 45rem;
+    margin-top: -22rem; */
 }
 .teeext {
-  font-family: Josefin Sans ", sans-serif";
-  font-weight: 800;
-  color: #087e8b;
-  margin-top: -13rem;
-  margin-right: 50rem;
-  font-size: 1, 2rem;
+    font-family: Josefin Sans ", sans-serif";
+    font-weight: 800;
+    color: #087e8b;
+    /* margin-top: -13rem; */
+    /* margin-right: 50rem; */
+    font-size: 1, 2rem;
 }
 
 .bubbleContainer {
-  display: inline-block;
-  position: relative;
-  margin-top: 100px;
-
+    display: inline-block;
+    position: relative;
+    margin-top: 100px;
 }
 .bubbleContent {
-  background-color: #F1F1F1;
-  border-radius: 30px;
-  padding: 50px;
-  max-width: 1200px;
-  margin-right: 25px;
-  margin-left: 75px;
-  margin-top: 150px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 19px;
-  text-align: justify;
-
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    padding: 50px;
+    max-width: 1200px;
+    margin-right: 25px;
+    margin-left: 75px;
+    margin-top: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
+    text-align: justify;
 }
 .lll{
   margin-left: 35rem;

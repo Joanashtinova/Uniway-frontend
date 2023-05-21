@@ -2,11 +2,11 @@ import React from "react";
 import styles from "./Global.module.css";
 import Video from "./Video.jsx";
 import {
-  getFirestore,
-  collection,
-  getDocs,
-  query,
-  limit,
+    getFirestore,
+    collection,
+    getDocs,
+    query,
+    limit,
 } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db, storage } from "@/Global/firebase";
@@ -15,26 +15,27 @@ import SearchComponent from "@/Components/search";
 import RowComponent from "./RowComponent";
 import Logo from "../public/images/logo.png";
 import Homeimage1 from "./Homeimage1";
-import Nananan from "../public/images/burrrrrr.png";
+import Strasttezt from "../public/images/burrrrrr.png";
 import Image from "next/image";
 import Izgledaj from "../public/images/izgledaj.png";
-import Momiche from "../public/images/image_home.png";
-import blabla from "../public/images/lll.png";
+import genZgirl from "../public/images/lll.png";
 import TextJ from "../public/images/text.png";
+import MomicheClouds from "../public/images/momiche.png";
+import { Grid } from "@mui/material";
 
 function HomeComponent() {
-  const [videos, setVideos] = useState([]);
+    const [videos, setVideos] = useState([]);
 
-  const fetchData = async () => {
-    const data = await getDocs(query(collection(db, "videos"), limit(4)));
-    setVideos(data.docs.map((doc) => doc.data()));
-    console.log(data.docs);
-    console.log(videos);
-  };
+    const fetchData = async () => {
+        const data = await getDocs(query(collection(db, "videos"), limit(4)));
+        setVideos(data.docs.map((doc) => doc.data()));
+        console.log(data.docs);
+        console.log(videos);
+    };
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+    useEffect(() => {
+        fetchData();
+    }, []);
 
   const HomeComponent = ({ videos }) => {
     return (
@@ -109,6 +110,5 @@ function HomeComponent() {
       </div>
     );
   };
-}
 
 export default HomeComponent;
