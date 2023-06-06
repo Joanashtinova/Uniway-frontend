@@ -128,3 +128,14 @@
   font-size: 19px;
   text-align: justify;
 }
+.lll{
+  margin-left: 35rem;
+  margin-top: 2rem;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 20px; /* Gap between grid items */
+}
+
