@@ -33,11 +33,12 @@ export default function VideoPage(props) {
   return (
     <div style={{ height: "100%" }}>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={6} style={{ marginTop: "150px" }}>
+        <Grid item xs={12} md={6} lg={6} style={{ marginTop: "150px" }}>
           <iframe
             // className={styles.bubbleContainer}
-            width="1020px"
-            height="680px"
+            width="100%"
+            height="100%"
+            // height="650px"
             src={video.video_url}
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encryptet-media;
@@ -48,9 +49,9 @@ export default function VideoPage(props) {
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Article text={video.article_text} />
+          <Article text={video.article_text} style={{ width: "400px" }} />
         </Grid>
-        <Grid item xs={12} md={6}></Grid>
+        <Grid item xs={19} md={6}></Grid>
       </Grid>
     </div>
   );
