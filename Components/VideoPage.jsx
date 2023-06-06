@@ -36,8 +36,8 @@ export default function VideoPage(props) {
         <Grid item xs={12} md={6} lg={6} style={{ marginTop: "150px" }}>
           <iframe
             // className={styles.bubbleContainer}
-            width="100%"
-            height="100%"
+            width="800px"
+            height="450px"
             // height="650px"
             src={video.video_url}
             frameborder="0"
