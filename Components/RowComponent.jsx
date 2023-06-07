@@ -25,15 +25,22 @@ function RowComponent(props) {
                     </Link>
                 </Grid>
 
-        {props.videos.map((video) => {
-          <Grid>className={styles.videoContainer}</Grid>;
-          return (
-            <Grid item xs={12} md={3}>
-              <Video
-                title={video.title}
-                image={video.tumbnail_url}
-                id={video.id}
-              />
+                {props.videos.map((video) => {
+                    return (
+                        <Grid
+                            item
+                            xs={12}
+                            md={3}
+                            className={styles.videoContainer}
+                        >
+                            <Video
+                                title={video.title}
+                                image={video.tumbnail_url}
+                                id={video.id}
+                            />
+                        </Grid>
+                    );
+                })}
             </Grid>
         </div>
     );
