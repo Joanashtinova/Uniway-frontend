@@ -22,7 +22,7 @@ function RowComponent(props) {
 
         {props.videos.map((video) => {
           return (
-            <Grid item xs={12} md={3} className={styles.videoContainer}>
+            <Grid item xs={12} md={3}>
               <Video
                 title={video.title}
                 image={video.tumbnail_url}

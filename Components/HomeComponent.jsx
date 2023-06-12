@@ -98,7 +98,7 @@ function HomeComponent() {
             layout="responsive"
           />
         </Grid>
-        <Grid item xs={12} md={12}>
+        <Grid item xs={12}>
           <RowComponent videos={videos} />
         </Grid>
       </Grid>
