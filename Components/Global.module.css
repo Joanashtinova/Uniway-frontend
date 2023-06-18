@@ -147,7 +147,6 @@
 }
 .bubbleCon {
     background-color: #83c5be;
-
     padding: 50px;
     max-width: 1000px;
     font-size: 20px;
@@ -171,16 +170,15 @@
 }
 
 .video {
-    @media (max-width: 600px) {
-        /* Styles for devices with a maximum width of 600px (e.g., phones) */
+    height: 400px;
+}
+
+@media screen and (max-width: 600px) {
+    .video {
         height: 300px;
     }
-
-    @media (min-width: 601px) {
-        /* Styles for devices with a minimum width of 601px (e.g., tablets and desktops) */
-        height: 500px;
-    }
 }
+
 .videoPageBackground {
     background-color: #f0f0f0;
 }
