@@ -15,111 +15,113 @@ import Logo from "../public/images/logo.png";
 import Image from "next/image";
 
 const pages = [
-    { name: "Видеа", page: "videos" },
-    { name: "Калкулатор", page: "calculator" },
+  { name: "Видеа", page: "videos" },
+  { name: "Калкулатор", page: "calculator" },
 ];
 
 function Navbar() {
-    const [anchorElNav, setAnchorElNav] = React.useState(null);
-    const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-    const handleOpenNavMenu = (event) => {
-        setAnchorElNav(event.currentTarget);
-    };
-    const handleOpenUserMenu = (event) => {
-        setAnchorElUser(event.currentTarget);
-    };
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+  const handleOpenUserMenu = (event) => {
+    setAnchorElUser(event.currentTarget);
+  };
 
-    const handleCloseNavMenu = () => {
-        setAnchorElNav(null);
-    };
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
 
-    const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
-    };
-    const styles = {
-        container: {
-            position: "relative",
-            paddingTop: "30px",
-        },
+  const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
+  };
+  const styles = {
+    container: {
+      position: "relative",
+      paddingTop: "30px",
+    },
 
-        navbar: {
-            justifyContent: "space-between",
-            position: "sticky",
-            width: "90%",
-            backgroundColor: "#fff",
-            zIndex: 100,
-            padding: "10px 0",
-            margin: "0 auto",
-            borderRadius: "60px",
-            display: "flex",
-        },
-        logo: {
-            margin: 0,
-            padding: "0 20px",
-            float: "left",
-        },
-        nav: {
-            // border: "3px solid red",
+    navbar: {
+      justifyContent: "space-between",
+      position: "sticky",
+      width: "90%",
+      backgroundColor: "#fff",
+      zIndex: 100,
+      padding: "10px 0",
+      margin: "0 auto",
+      borderRadius: "60px",
+      display: "flex",
+    },
+    logo: {
+      margin: 0,
+      padding: "0 20px",
+      float: "left",
+    },
 
-            float: "right",
-            marginRight: "40px",
-            display: "flex",
-            top: "0",
-            alignSelf: "right",
-            marginTop: "20px",
-        },
-        ul: {
-            margin: 0,
-            padding: 0,
-            listStyle: "none",
-        },
-        li: {
-            display: "inline-block",
-            marginLeft: "20px",
-        },
-        a: {
-            color: "black",
-            textDecoration: "none",
-        },
-    };
-    return (
-        <div style={styles.container}>
-            <div style={styles.navbar}>
-                <div style={{ marginLeft: "40px" }}>
-                    <Link href="/">
-                        <Image src={Logo} alt="Logo" width={100} height={70} />
-                    </Link>
-                </div>
-                <nav style={styles.nav}>
-                    <Link
-                        href={"/videos"}
-                        style={{
-                            color: "#0b3954",
-                            textDecoration: "none",
-                            fontFamily: "",
-                            fontSize: "17px",
-                            marginRight: "30px",
-                        }}
-                    >
-                        Видеа
-                    </Link>{" "}
-                    <Link
-                        href={"/calcolator"}
-                        style={{
-                            color: "#0b3954",
+    nav: {
+      // border: "3px solid red",
 
-                            textDecoration: "none",
-                            fontFamily: "",
-                            fontSize: "17px",
-                            marginRight: "30px",
-                        }}
-                    >
-                        Калкулатор
-                    </Link>{" "}
-                </nav>
-            </div>
-            {/* // <AppBar
+      float: "right",
+      marginRight: "40px",
+      display: "flex",
+      top: "0",
+      alignSelf: "right",
+      marginTop: "20px",
+    },
+    ul: {
+      margin: 0,
+      padding: 0,
+      listStyle: "none",
+    },
+    li: {
+      display: "inline-block",
+      marginLeft: "20px",
+    },
+    a: {
+      color: "black",
+      textDecoration: "none",
+    },
+  };
+
+  return (
+    <div style={styles.container}>
+      <div style={styles.navbar}>
+        <div style={{ marginLeft: "40px" }}>
+          <Link href="/">
+            <Image src={Logo} alt="Logo" width={100} height={70} />
+          </Link>
+        </div>
+        <nav style={styles.nav}>
+          <Link
+            href={"/videos"}
+            style={{
+              color: "#0b3954",
+              textDecoration: "none",
+              fontFamily: "",
+              fontSize: "17px",
+              marginRight: "30px",
+            }}
+          >
+            Видеа
+          </Link>{" "}
+          <Link
+            href={"/calcolator"}
+            style={{
+              color: "#0b3954",
+
+              textDecoration: "none",
+              fontFamily: "",
+              fontSize: "17px",
+              marginRight: "30px",
+            }}
+          >
+            Калкулатор
+          </Link>{" "}
+        </nav>
+      </div>
+      {/* // <AppBar
         //     position="fixed"
         //     sx={{
         //         backgroundColor: "white",
@@ -163,7 +165,7 @@ function Navbar() {
         //         </Toolbar>
         //     </Container>
         // </AppBar> */}
-        </div>
-    );
+    </div>
+  );
 }
 export default Navbar;
