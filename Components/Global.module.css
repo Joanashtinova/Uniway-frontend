@@ -26,7 +26,10 @@
 .title {
   text-align: center; /* Center the text */
   font-size: 23px;
-  font-family: Vindigater;
+  font-weight: 700;
+  color: #1d3354;
+  max-width: 19rem;
+  margin: 0 auto;
 }
 
 .hero_image {
