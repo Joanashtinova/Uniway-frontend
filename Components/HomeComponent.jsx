@@ -22,6 +22,7 @@ import genZgirl from "../public/images/lll.png";
 import TextJ from "../public/images/text.png";
 import MomicheClouds from "../public/images/momiche.png";
 import { Grid } from "@mui/material";
+
 function HomeComponent() {
   const [videos, setVideos] = useState([]);
   const fetchData = async () => {
@@ -55,8 +56,8 @@ function HomeComponent() {
             layout="responsive"
           />
           <h4 className={styles.teeext} style={{ marginTop: "20px" }}>
-            Най-доброто за един млад човек е ... Вдъхновението! Всяко наше видео
-            ви дава точно това.
+            Uniway!Без повече стресиращо и хаотично търсене на призванието ви.
+            Тук то само ще ви открие!
           </h4>
         </Grid>
         <Grid item xs={12} md={6}>
@@ -81,22 +82,23 @@ function HomeComponent() {
         }}
       >
         <Grid item xs={12} md={6}>
-          <Image
-            className={styles.izgledaj}
-            src={Izgledaj}
-            width={500}
-            height={150}
-            layout="responsive"
-          />
+          <div style={{ width: "600px" }}>
+            <Image
+              className={styles.izgledaj}
+              src={Izgledaj}
+              layout="responsive"
+            />
+          </div>
+          <Image className={styles.TextJ} src={TextJ} width={450} height={90} />
         </Grid>
         <Grid item xs={12} md={6}>
-          <Image
-            // className={styles.lll}
-            src={genZgirl}
-            width={600}
-            height={600}
-            layout="responsive"
-          />
+          <div style={{ width: "700px" }}>
+            <Image
+              className={styles.genZgirl}
+              src={genZgirl}
+              layout="responsive"
+            />
+          </div>
         </Grid>
         <Grid item xs={12}>
           <RowComponent videos={videos} />

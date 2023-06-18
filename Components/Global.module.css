@@ -9,6 +9,9 @@
 .foo {
   white-space: "pre-wrap";
 }
+.baloon {
+  white-space: "pre-warp";
+}
 
 .imageContainer {
   width: 20rem; /* Adjust the width as needed */
@@ -75,7 +78,7 @@
 }
 
 .title_link {
-  color: black;
+  color: #1d3354;
   text-decoration: none;
 }
 .video_tumb {
@@ -96,6 +99,8 @@
 .izgledaj {
   /* margin-top: -10rem;
     margin-left: 9rem; */
+  margin-top: 10rem;
+  margin-left: 7rem;
 }
 
 .Momiche {
@@ -117,15 +122,46 @@
   margin-top: 100px;
 }
 .bubbleContent {
-  background-color: #f1f1f1;
+  background-color: #adf7b6;
   border-radius: 30px;
   padding: 50px;
   max-width: 1200px;
+  border: 10px solid #1d3354;
   margin-top: 2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1rem;
+  font-family: "Lilita One";
+  font-size: 19px;
   text-align: justify;
   width: 100%;
+  @media (max-width: 600px) {
+    /* Styles for devices with a maximum width of 600px (e.g., phones) */
+    font-size: 15px;
+  }
+
+  @media (min-width: 601px) {
+    /* Styles for devices with a minimum width of 601px (e.g., tablets and desktops) */
+    font-size: 20px;
+  }
+}
+.bubbleCon {
+  background-color: #83c5be;
+
+  padding: 50px;
+  max-width: 1000px;
+  font-weight: 00;
+  font-size: 60px;
+  margin-top: 2rem;
+  border-radius: 30px;
+  border: 10px solid #1d3354;
+  color: #1d3354;
+  @media (max-width: 600px) {
+    /* Styles for devices with a maximum width of 600px (e.g., phones) */
+    font-size: 18px;
+  }
+
+  @media (min-width: 601px) {
+    /* Styles for devices with a minimum width of 601px (e.g., tablets and desktops) */
+    font-size: 20px;
+  }
 }
 .lll {
   margin-left: 35rem;
@@ -148,4 +184,21 @@
     /* Styles for devices with a minimum width of 601px (e.g., tablets and desktops) */
     height: 500px;
   }
+}
+.videoPageBackground {
+  background-color: #f0f0f0;
+}
+
+.person_name {
+  font-size: 40px;
+  font-weight: 900;
+  color: #e73745;
+}
+.TextJ {
+  margin-top: 2rem;
+  margin-left: 7rem;
+}
+.genZgirl {
+  margin-top: 8rem;
+  margin-left: 4rem;
 }
