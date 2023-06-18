@@ -13,7 +13,6 @@ import AdbIcon from "@mui/icons-material/Adb";
 import Link from "next/link";
 import Logo from "../public/images/logo.png";
 import Image from "next/image";
-import SearchComponent from "./search";
 
 const pages = [
   { name: "Видеа", page: "videos" },
@@ -95,9 +94,6 @@ function Navbar() {
           </Link>
         </div>
         <nav style={styles.nav}>
-          <div>
-            <SearchComponent />
-          </div>
           <Link
             href={"/videos"}
             style={{
