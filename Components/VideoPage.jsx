@@ -8,6 +8,7 @@ import styles from "./Global.module.css";
 import { Grid } from "@mui/material";
 import Video from "@/Components/Video";
 import Article from "./Article";
+import Article_people from "./Article_people";
 
 export default function VideoPage(props) {
   const [video, setVideo] = useState({});
@@ -31,38 +32,62 @@ export default function VideoPage(props) {
   }, [props.id]);
 
   return (
-    <div style={{ height: "100%", width: "90%", margin: "0 auto" }}>
-      <Grid container spacing={2}>
-        <Grid
-          item
-          xs={12}
-          md={8}
-          style={{
-            marginTop: "33px",
+    <div style={{ backgroundColor: "#087e8b", top: "0", position: "absolute" }}>
+      <div
+        style={{
+          height: "100%",
+          width: "90%",
 
-            borderRadius: "10%",
-          }}
-        >
-          <iframe
-            // className={styles.bubbleContainer}
-            width="100%"
-            className={styles.video}
-            src={video.video_url}
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encryptet-media;
+          margin: "0 auto",
+          marginTop: "100px",
+        }}
+      >
+        <Grid container spacing={2}>
+          <Grid
+            item
+            xs={12}
+            md={8}
+            style={{
+              marginTop: "33px",
+
+              borderRadius: "10%",
+            }}
+          >
+            <iframe
+              // className={styles.bubbleContainer}
+              width="100%"
+              className={styles.video}
+              src={video.video_url}
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encryptet-media;
               gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-          <h1 style={{ fontFamily: "Arial, sans-serif" }}>{video.title}</h1>
-        </Grid>
+              allowFullScreen
+            ></iframe>
+            <h1
+              style={{
+                fontWeight: "700",
+                fontSize: "35px",
+                color: "#83c5be",
+              }}
+            >
+              {video.title}
+            </h1>
+          </Grid>
 
-        <Grid item xs={12} md={4}></Grid>
+          <Grid item xs={12} md={4}>
+            <Article_people
+              text={video.article_people_text}
+              style={styles.person_name}
+              person_name={video.person}
+            />
+          </Grid>
 
-        <Grid item xs={12} md={8}>
-          <Article text={video.article_text} />
+          <Grid item xs={12} md={8}>
+            <Article text={video.article_text} />
+          </Grid>
+          <Grid item xs={12} md={4}></Grid>
         </Grid>
-        <Grid item xs={12} md={4}></Grid>
-      </Grid>
+      </div>
     </div>
   );
 }
