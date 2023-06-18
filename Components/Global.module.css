@@ -200,8 +200,47 @@
 .TextJ {
   margin-top: 2rem;
   margin-left: 7rem;
+  @media (max-width: 600px) {
+    /* Styles for devices with a maximum width of 600px (e.g., phones) */
+    width: 350px;
+    height: 80px;
+    margin-left: 15px;
+  }
+
+  @media (min-width: 601px) {
+    /* Styles for devices with a minimum width of 601px (e.g., tablets and desktops) */
+    width: 500px;
+    height: 100px;
+    margin-top: -7rem;
+  }
 }
 .genZgirl {
   margin-top: 8rem;
   margin-left: 4rem;
+}
+.DivIzgelaj {
+  width: 90%;
+  @media (max-width: 600px) {
+    /* Styles for devices with a maximum width of 600px (e.g., phones) */
+    margin-left: -6rem;
+  }
+
+  @media (min-width: 601px) {
+    /* Styles for devices with a minimum width of 601px (e.g., tablets and desktops) */
+    height: 500px;
+  }
+}
+.DivGenZgirl {
+  @media (max-width: 600px) {
+    /* Styles for devices with a maximum width of 600px (e.g., phones) */
+    width: 400px;
+    margin-left: -60px;
+    margin-top: -70px;
+  }
+
+  @media (min-width: 601px) {
+    /* Styles for devices with a minimum width of 601px (e.g., tablets and desktops) */
+    width: 700px;
+    height: 900px;
+  }
 }

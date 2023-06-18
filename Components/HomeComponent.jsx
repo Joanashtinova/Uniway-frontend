@@ -82,17 +82,17 @@ function HomeComponent() {
         }}
       >
         <Grid item xs={12} md={6}>
-          <div style={{ width: "600px" }}>
+          <div className={styles.DivIzgelaj}>
             <Image
               className={styles.izgledaj}
               src={Izgledaj}
               layout="responsive"
             />
           </div>
-          <Image className={styles.TextJ} src={TextJ} width={450} height={90} />
+          <Image className={styles.TextJ} src={TextJ} />
         </Grid>
         <Grid item xs={12} md={6}>
-          <div style={{ width: "700px" }}>
+          <div className={styles.DivGenZgirl}>
             <Image
               className={styles.genZgirl}
               src={genZgirl}
