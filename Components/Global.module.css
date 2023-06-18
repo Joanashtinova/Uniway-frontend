@@ -173,12 +173,6 @@
     height: 400px;
 }
 
-@media screen and (max-width: 600px) {
-    .video {
-        height: 300px;
-    }
-}
-
 .videoPageBackground {
     background-color: #f0f0f0;
 }
@@ -233,5 +227,10 @@
         /* Styles for devices with a minimum width of 601px (e.g., tablets and desktops) */
         width: 700px;
         height: 900px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .video {
+        height: 300px;
     }
 }
