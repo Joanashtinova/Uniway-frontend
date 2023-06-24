@@ -7,8 +7,10 @@ import SearchComponent from "@/Components/search";
 import Video from "@/Components/Video";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import { Grid } from "@mui/material";
-
-export default function Videos(pros) {
+import ButtonUni from "../../Components/UI elemnts/buttonUni";
+import ButtonSpec from "../../Components/UI elemnts/buttonSpec";
+import Link from "next/link";
+export default function Universities() {
   const [videos, setVideos] = useState([]);
   const [filteredVideos, setFilteredVideos] = useState([]);
 
@@ -48,7 +50,14 @@ export default function Videos(pros) {
   };
 
   return (
-    <div style={{ height: "100%" }}>
+    <div
+      style={{
+        height: "100%",
+        backgroundColor: "#83c5d2",
+        top: "0",
+        position: "absolute",
+      }}
+    >
       <Grid container spacing={2}>
         <Grid item xs={12} md={12} style={{ marginTop: "150px" }}>
           <SearchComponent
@@ -56,6 +65,15 @@ export default function Videos(pros) {
             handleNewSearch={handleNewSearch}
             onKeyUp={handleSearchKeyUp}
           />
+          <h5
+            style={{ marginLeft: "30px", fontWeight: "90px", color: "#1d3354" }}
+          >
+            Открии стоя/та:
+          </h5>
+          <Link href={"/universities"}>
+            <ButtonUni />
+          </Link>
+          <ButtonSpec />
         </Grid>
         {filteredVideos.map((video) => (
           <Grid item xs={12} md={3} key={video.id}>
