@@ -42,7 +42,7 @@ export default function Videos() {
   }, [videos, query]);
 
   return (
-    <div style={{ height: "100%" }}>
+    <div style={{ height: "100%", marginTop: "200px" }}>
       <Grid container spacing={2}>
         {filteredVideos.map((video) => (
           <Grid item xs={12} md={3} key={video.id}>

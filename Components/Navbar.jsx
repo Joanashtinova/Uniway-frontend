@@ -92,7 +92,7 @@ function Navbar() {
       <div style={styles.navbar}>
         <div style={{ marginLeft: "40px" }}>
           <Link href="/">
-            <Image src={Logo} alt="Logo" width={100} height={80} />
+            <Image src={Logo} alt="Logo" width={130} height={90} />
           </Link>
         </div>
         <nav style={styles.nav}>
