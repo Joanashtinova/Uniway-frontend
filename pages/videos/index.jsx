@@ -1,62 +1,49 @@
-//this is videos Page/
-import React, { useLayoutEffect } from "react";
-import { collection, getDocs, query, limit } from "firebase/firestore";
-import { useEffect, useState } from "react";
-import { db, storage } from "@/Global/firebase";
+import React, { useEffect, useState } from "react";
+import { collection, getDocs, query } from "firebase/firestore";
+import { db } from "@/Global/firebase";
 import SearchComponent from "@/Components/search";
 import Video from "@/Components/Video";
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import { Grid } from "@mui/material";
+import { useRouter } from "next/router";
 
-export default function Videos(pros) {
+export default function Videos() {
   const [videos, setVideos] = useState([]);
   const [filteredVideos, setFilteredVideos] = useState([]);
+  const router = useRouter();
+  const { query } = router;
 
-  const handleNewSearch = (searchTerm) => {
-    if (searchTerm.length > 0) {
-      let newVideos = videos;
+  const fetchData = async () => {
+    const data = await getDocs(collection(db, "videos"));
+    setVideos(data.docs.map((doc) => doc.data()));
+  };
 
-      newVideos = newVideos.filter(
-        (x) =>
-          x.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          x.categories
-            .join(" ")
-            .toLowerCase()
-            .includes(searchTerm.toLowerCase())
-      );
+  useEffect(() => {
+    fetchData();
+  }, []);
 
+  useEffect(() => {
+    const { search } = query;
+    if (search) {
+      const searchTerm = search.toString();
+      const newVideos = videos
+        .filter((x) => x.title !== undefined && x.categories !== undefined)
+        .filter(
+          (x) =>
+            x.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            x.categories
+              .join(" ")
+              .toLowerCase()
+              .includes(searchTerm.toLowerCase())
+        );
       setFilteredVideos(newVideos);
     } else {
       setFilteredVideos(videos);
     }
-  };
-
-  const fetchData = async () => {
-    const data = await getDocs(query(collection(db, "videos")));
-    setVideos(data.docs.map((doc) => doc.data()));
-    setFilteredVideos(data.docs.map((doc) => doc.data()));
-  };
-
-  useLayoutEffect(() => {
-    fetchData();
-  }, []);
-
-  const handleSearchKeyUp = (event) => {
-    if (event.keyCode === 13) {
-      handleNewSearch(event.target.value);
-    }
-  };
+  }, [videos, query]);
 
   return (
     <div style={{ height: "100%" }}>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={12} style={{ marginTop: "150px" }}>
-          <SearchComponent
-            videos={videos}
-            handleNewSearch={handleNewSearch}
-            onKeyUp={handleSearchKeyUp}
-          />
-        </Grid>
         {filteredVideos.map((video) => (
           <Grid item xs={12} md={3} key={video.id}>
             <Video
