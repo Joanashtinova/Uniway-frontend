@@ -57,8 +57,9 @@ function Navbar() {
     },
     logo: {
       margin: 0,
-      padding: "0 20px",
+      padding: "20px",
       float: "left",
+      marginTop: "50px",
     },
 
     nav: {
@@ -69,7 +70,7 @@ function Navbar() {
       display: "flex",
       top: "0",
       alignSelf: "right",
-      marginTop: "20px",
+      marginTop: "8px",
     },
     ul: {
       margin: 0,
@@ -91,10 +92,9 @@ function Navbar() {
       <div style={styles.navbar}>
         <div style={{ marginLeft: "40px" }}>
           <Link href="/">
-            <Image src={Logo} alt="Logo" width={100} height={70} />
+            <Image src={Logo} alt="Logo" width={100} height={80} />
           </Link>
         </div>
-        <SearchComponent /> {/* Add the SearchComponent here */}
         <nav style={styles.nav}>
           <Link
             href={"/videos"}
@@ -104,6 +104,7 @@ function Navbar() {
               fontFamily: "",
               fontSize: "17px",
               marginRight: "30px",
+              marginTop: "23px",
             }}
           >
             Видеа
@@ -116,11 +117,13 @@ function Navbar() {
               textDecoration: "none",
               fontFamily: "",
               fontSize: "17px",
-              marginRight: "30px",
+              marginRight: "20px",
+              marginTop: "23px",
             }}
           >
             Калкулатор
           </Link>{" "}
+          <SearchComponent /> {/* Add the SearchComponent here */}
         </nav>
       </div>
       {/* // <AppBar

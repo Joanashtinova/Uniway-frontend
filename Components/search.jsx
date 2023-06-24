@@ -34,6 +34,14 @@ export default function SearchComponent(props) {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           onKeyDown={handleKeyDown}
+          InputProps={{
+            style: {
+              borderRadius: "20px",
+              marginTop: "1px",
+              marginBottom: "5px",
+              // Adjust the value as needed
+            },
+          }}
         />
         <IconButton onClick={() => handleSearch(searchTerm)}>
           <SearchIcon />
