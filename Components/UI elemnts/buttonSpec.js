@@ -1,6 +1,6 @@
 import React from "react";
 
-const ButtonUni = React.memo(() => (
+const ButtonSpec = React.memo(() => (
   <svg
     width="280"
     height="50"
@@ -16,4 +16,4 @@ const ButtonUni = React.memo(() => (
   </svg>
 ));
 
-export default ButtonUni;
+export default ButtonSpec;

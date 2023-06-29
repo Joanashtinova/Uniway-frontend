@@ -62,8 +62,10 @@ export default function Videos() {
           </h5>
           <Link href={"/universities"}>
             <ButtonUni />
+          </Link>{" "}
+          <Link href={"/specialnosti"}>
+            <ButtonSpec />
           </Link>
-          <ButtonSpec />
         </Grid>
         {filteredVideos.map((video) => (
           <Grid item xs={12} md={3} key={video.id}>
