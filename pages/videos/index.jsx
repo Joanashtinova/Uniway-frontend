@@ -47,7 +47,8 @@ export default function Videos() {
   return (
     <div
       style={{
-        height: "100%",
+        // height: "1000vh",
+        width: "100%",
         backgroundColor: "#83c5d2",
         top: "0",
         position: "absolute",
