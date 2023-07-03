@@ -8,6 +8,7 @@ import ButtonUni from "../../Components/UI elemnts/buttonUni";
 import ButtonSpec from "../../Components/UI elemnts/buttonSpec";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import styles from "../../Components/Global.module.css";
 
 export default function Videos() {
   const [videos, setVideos] = useState([]);
@@ -47,9 +48,9 @@ export default function Videos() {
   return (
     <div
       style={{
-        height: "100%",
         backgroundColor: "#83c5d2",
         top: "0",
+
         position: "absolute",
       }}
     >

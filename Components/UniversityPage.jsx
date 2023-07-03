@@ -7,6 +7,7 @@ import SearchComponent from "@/Components/search";
 import Video from "@/Components/Video";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import { Grid } from "@mui/material";
+import styles from "./Global.module.css";
 
 export default function Videos(pros) {
   const [videos, setVideos] = useState([]);
@@ -35,7 +36,7 @@ export default function Videos(pros) {
         {universities.map((university) => {
           return (
             <Grid item xs={12} key={university}>
-              <h3>{university}</h3>
+              <h3 className={styles.zaglawieuni}>{university}</h3>
               {filteredVideos
                 .filter((video) => video.university === university)
                 .map((video) => (
