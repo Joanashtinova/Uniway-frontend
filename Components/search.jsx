@@ -4,6 +4,7 @@ import { db } from "@/Global/firebase";
 import { ButtonGroup, IconButton, TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import { useRouter } from "next/router";
+import styles from "./Global.module.css";
 
 export default function SearchComponent(props) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -25,7 +26,7 @@ export default function SearchComponent(props) {
   };
 
   return (
-    <div style={{ margin: "10px", marginBottom: "10px" }}>
+    <div className={styles.searchballon}>
       <ButtonGroup variant="outlined" aria-label="outlined button group">
         <TextField
           id="outlined-basic"

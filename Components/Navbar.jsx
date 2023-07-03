@@ -14,6 +14,7 @@ import Link from "next/link";
 import Logo from "../public/images/logo.png";
 import Image from "next/image";
 import SearchComponent from "./search";
+import styles from "./Global.module.css";
 
 const pages = [
   { name: "Видеа", page: "videos" },
@@ -38,12 +39,7 @@ function Navbar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-  const styles = {
-    container: {
-      position: "relative",
-      paddingTop: "30px",
-    },
-
+  const localstyles = {
     navbar: {
       justifyContent: "space-between",
       position: "sticky",
@@ -88,40 +84,16 @@ function Navbar() {
   };
 
   return (
-    <div style={styles.container}>
-      <div style={styles.navbar}>
-        <div style={{ marginLeft: "40px" }}>
+    <div class={styles.container}>
+      <div style={localstyles.navbar}>
+        <div>
           <Link href="/">
-            <Image src={Logo} alt="Logo" width={130} height={90} />
+            <Image src={Logo} alt="Logo" className={styles.lllogo} />
           </Link>
         </div>
-        <nav style={styles.nav}>
-          <Link
-            href={"/videos"}
-            style={{
-              color: "#0b3954",
-              textDecoration: "none",
-              fontFamily: "",
-              fontSize: "17px",
-              marginRight: "30px",
-              marginTop: "23px",
-            }}
-          >
+        <nav style={localstyles.nav}>
+          <Link href={"/videos"} className={styles.videobutton}>
             Видеа
-          </Link>{" "}
-          <Link
-            href={"/calcolator"}
-            style={{
-              color: "#0b3954",
-
-              textDecoration: "none",
-              fontFamily: "",
-              fontSize: "17px",
-              marginRight: "20px",
-              marginTop: "23px",
-            }}
-          >
-            Калкулатор
           </Link>{" "}
           <SearchComponent /> {/* Add the SearchComponent here */}
         </nav>
