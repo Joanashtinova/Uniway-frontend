@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { collection, getDocs, query } from "firebase/firestore";
 import { db } from "@/Global/firebase";
@@ -45,7 +46,11 @@ export default function Videos() {
     }
   }, [videos, query]);
 
+
+
+export default function AllvideosPage() {
   return (
+
     <div
       style={{
         backgroundColor: "#83c5d2",
@@ -78,6 +83,7 @@ export default function Videos() {
           </Grid>
         ))}
       </Grid>
+
     </div>
   );
 }
