@@ -35,7 +35,7 @@ function HomeComponent() {
         fetchData();
     }, []);
     return (
-        <div style={{ overflowX: "hidden" }}>
+        <div style={{ overflowX: "hidden", overflowY: "hidden" }}>
             <Grid
                 container
                 spacing={2}
