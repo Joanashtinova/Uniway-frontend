@@ -35,7 +35,12 @@ function HomeComponent() {
         fetchData();
     }, []);
     return (
-        <div style={{ overflowX: "hidden", overflowY: "hidden" }}>
+        <div
+            style={{
+                overflowX: "hidden",
+                overflowY: "hidden",
+            }}
+        >
             <Grid
                 container
                 spacing={2}
@@ -107,7 +112,7 @@ function HomeComponent() {
                         />
                     </div>
                 </Grid>
-                <Grid item xs={12}>
+                <Grid item xs={12} style={{ marginBottom: 150 }}>
                     <RowComponent videos={videos} />
                 </Grid>
             </Grid>
