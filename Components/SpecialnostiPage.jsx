@@ -35,15 +35,23 @@ export default function Videos(pros) {
   }, []);
 
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: "#087e8b",
+        top: "0",
+        position: "absolute",
+        minWidth: "98.9vw",
+      }}
+    >
       {specialnost.map((specialnost) => (
-        <div key={specialnost}>
+        <div key={specialnost} style={{ marginTop: "150px" }}>
           <h3 className={styles.ButtonSpez}>{specialnost}</h3>
           <Grid container spacing={3}>
             {filteredVideos
               .filter((video) => video.specialnost === specialnost)
               .map((video) => (
                 <Grid
+                  // style={{ marginTop: "130px" }}
                   item
                   xs={12}
                   md={3}

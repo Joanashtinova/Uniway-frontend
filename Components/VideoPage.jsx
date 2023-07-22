@@ -32,7 +32,14 @@ export default function VideoPage(props) {
   }, [props.id]);
 
   return (
-    <div style={{ backgroundColor: "#087e8b", top: "0", position: "absolute" }}>
+    <div
+      style={{
+        backgroundColor: "#087e8b",
+        top: "0",
+        position: "absolute",
+        minWidth: "100vw",
+      }}
+    >
       <div
         style={{
           height: "100%",

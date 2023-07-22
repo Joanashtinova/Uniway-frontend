@@ -1,9 +1,9 @@
 import React from "react";
 
-const ButtonUni = React.memo(() => (
+const ButtonUni = React.memo((props) => (
   <svg
-    width="280"
-    height="50"
+    width={props.width}
+    height={props.height}
     viewBox="0 0 399 84"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

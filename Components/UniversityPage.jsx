@@ -31,11 +31,18 @@ export default function Videos(pros) {
   }, []);
 
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: "#087e8b",
+        top: "0",
+        position: "absolute",
+        minWidth: "98.9vw",
+      }}
+    >
       <Grid style={{ marginTop: "40px" }} container spacing={2}>
         {universities.map((university) => {
           return (
-            <Grid item xs={12} key={university}>
+            <Grid item xs={12} key={university} style={{ marginTop: "120px" }}>
               <h3 className={styles.zaglawieuni}>{university}</h3>
               {filteredVideos
                 .filter((video) => video.university === university)
