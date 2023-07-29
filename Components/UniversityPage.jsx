@@ -33,7 +33,7 @@ export default function Videos(pros) {
   return (
     <div
       style={{
-        backgroundColor: "#087e8b",
+        backgroundColor: "#adf7b6",
         top: "0",
         position: "absolute",
         minWidth: "98.9vw",
