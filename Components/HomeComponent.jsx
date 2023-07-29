@@ -56,11 +56,11 @@ function HomeComponent() {
           // height: "800px",
           width: "86%",
           margin: "0 auto",
-<<<<<<< Updated upstream
+
 
           height: "100vh",
-=======
->>>>>>> Stashed changes
+
+
         }}
       >
         <Grid item xs={12} md={6}>
