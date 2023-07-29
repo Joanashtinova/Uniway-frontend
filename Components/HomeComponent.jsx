@@ -22,6 +22,8 @@ import genZgirl from "../public/images/lll.png";
 import TextJ from "../public/images/text.png";
 import MomicheClouds from "../public/images/momiche.png";
 import { Grid } from "@mui/material";
+import Fostata from "../public/images/fostata.png";
+import Nameri from "../public/images/nameri.png";
 
 function HomeComponent() {
   const [videos, setVideos] = useState([]);
@@ -62,7 +64,7 @@ function HomeComponent() {
             height={200}
             layout="responsive"
           />
-          <h4 className={styles.teeext} style={{ marginTop: "20px" }}>
+          <h4 className={styles.teeext} style={{ marginTop: "-20px" }}>
             Uniway!Без повече стресиращо и хаотично търсене на призванието ви.
             Тук то само ще ви открие!
           </h4>
@@ -96,18 +98,10 @@ function HomeComponent() {
               layout="responsive"
             />
           </div>
-          <h4
-            className={styles.teeext}
-            style={{
-              marginTop: "-100px",
-              color: "#adf7b6",
-              width: "1100px",
-              marginLeft: "110px",
-            }}
-          >
+          <h3 className={styles.texxt}>
             Най-доброто за един млад човек е ... Вдъхновението! <br /> Всяко
             наше видео ви дава точно това.{" "}
-          </h4>
+          </h3>
         </Grid>
         <Grid item xs={12} md={6}>
           <div className={styles.DivGenZgirl}>
@@ -119,8 +113,38 @@ function HomeComponent() {
           </div>
         </Grid>
 
-        <Grid item xs={12} style={{ marginTop: -400 }}>
+        <Grid
+          item
+          xs={12}
+          style={{
+            marginTop: -450,
+          }}
+        >
           <RowComponent videos={videos} className={styles.vvvideos} />
+        </Grid>
+      </Grid>
+      <Grid
+        container
+        spacing={2}
+        style={{
+          background: "#ff97a0",
+          marginTop: "0px",
+          height: "120vh",
+        }}
+      >
+        <Grid item xs={12} md={6} className={styles.Nameri}>
+          <Image src={Nameri} layout="responsive" />
+        </Grid>
+
+        <Grid item xs={12} md={6} style={{ width: "50px" }}>
+          <Image src={Fostata} layout="responsive" className={styles.Fostata} />
+          <Grid className={styles.dobriq2}>
+            <h3 className={styles.dobriq}>
+              Добрият университет може да бъде ключа към успешното бъдеще...
+              <br />
+              Подсигури го с Uniway
+            </h3>
+          </Grid>
         </Grid>
       </Grid>
     </div>

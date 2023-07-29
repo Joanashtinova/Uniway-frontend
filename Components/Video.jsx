@@ -6,10 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function Video(props) {
   return (
-    <div
-      className={styles.video_ThmbHorizontal}
-      style={{ backgroundColor: "83c5d2" }}
-    >
+    <div className={styles.video_ThmbHorizontal} style={{}}>
       {" "}
       {/* Updated CSS class */}
       <Link
