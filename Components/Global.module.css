@@ -203,6 +203,16 @@
   height: 90px;
   margin-left: 40px;
 }
+<<<<<<< Updated upstream
+=======
+.container {
+  position: "relative";
+  padding-bottom: "30px";
+  padding-top: "30px";
+
+  /* margin-top: 30px; */
+}
+>>>>>>> Stashed changes
 .searchballon {
   margin: 6px;
 

@@ -37,23 +37,30 @@ function HomeComponent() {
     fetchData();
   }, []);
   return (
+<<<<<<< Updated upstream
     <div
       style={{
         overflowX: "hidden",
         overflowY: "hidden",
       }}
     >
+=======
+    <div style={{ backgroundColor: "#adf7b6" }}>
+>>>>>>> Stashed changes
       <Grid
         container
         spacing={2}
         b
         style={{
-          backgroundColor: "#adf7b6",
+          //   backgroundColor: "#adf7b6",
           // height: "800px",
           width: "86%",
           margin: "0 auto",
+<<<<<<< Updated upstream
 
           height: "100vh",
+=======
+>>>>>>> Stashed changes
         }}
       >
         <Grid item xs={12} md={6}>

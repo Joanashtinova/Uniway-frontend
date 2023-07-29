@@ -46,6 +46,7 @@ export default function Videos() {
   }, [videos, query]);
 
   return (
+<<<<<<< Updated upstream
     <div className={styles.container}>
       <div className={styles.background}>
         <Grid container spacing={2}>
@@ -83,6 +84,40 @@ export default function Videos() {
           ))}
         </Grid>
       </div>
+=======
+    <div
+      style={{
+        backgroundColor: "#83c5d2",
+        top: "0",
+
+        position: "absolute",
+      }}
+    >
+      <Grid container spacing={2}>
+        <Grid item xs={12} md={12} style={{ marginTop: "150px" }}>
+          <h5
+            style={{ marginLeft: "30px", fontWeight: "90px", color: "#1d3354" }}
+          >
+            Открий своя/та:
+          </h5>
+          <Link href={"/universities"}>
+            <ButtonUni />
+          </Link>{" "}
+          <Link href={"/specialnosti"}>
+            <ButtonSpec />
+          </Link>
+        </Grid>
+        {filteredVideos.map((video) => (
+          <Grid item xs={12} md={3} key={video.id}>
+            <Video
+              title={video.title}
+              image={video.tumbnail_url}
+              id={video.id}
+            />
+          </Grid>
+        ))}
+      </Grid>
+>>>>>>> Stashed changes
     </div>
   );
 }
