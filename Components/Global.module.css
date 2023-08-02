@@ -320,7 +320,8 @@
 .Fostata {
   height: 605px;
   width: 550px;
-  margin-top: 140px;
+  margin-top: 130px;
+  margin-left: 40px;
 }
 
 .texxt {
@@ -331,8 +332,8 @@
   margin-left: 110px;
 }
 .Nameri {
-  margin-left: 700px;
-  margin-top: 160px;
+  margin-left: -40px;
+  margin-top: 150px;
 }
 .dobriq {
   font-weight: 800;

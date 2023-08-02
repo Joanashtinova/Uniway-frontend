@@ -139,7 +139,7 @@ function HomeComponent() {
           </div>
         </Grid>
         <Grid item xs={12} md={6} id="secondGrid">
-          <Image src={Nameri} layout="responsive" />
+          <Image src={Nameri} className={styles.Nameri} layout="responsive" />
           <h3 className={styles.dobriq}>
             Добрият университет може да бъде ключа към успешното бъдеще...
             <br />
