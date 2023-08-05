@@ -24,6 +24,8 @@ import MomicheClouds from "../public/images/momiche.png";
 import { Grid } from "@mui/material";
 import Fostata from "../public/images/fostata.png";
 import Nameri from "../public/images/nameri.png";
+import UniButton from "./UI elemnts/buttonUni";
+import Link from "next/link";
 
 function HomeComponent() {
   const [videos, setVideos] = useState([]);
@@ -139,13 +141,16 @@ function HomeComponent() {
           </div>
         </Grid>
         <Grid item xs={12} md={6} id="secondGrid">
-          <Image src={Nameri} className={styles.Nameri} layout="responsive" />
+          <Image src={Nameri} className={styles.Nameri} />
           <h3 className={styles.dobriq}>
             Добрият университет може да бъде ключа към успешното бъдеще...
             <br />
             Подсигури го с Uniway
           </h3>
         </Grid>
+        <Link href={"/universities"} className={styles.ButtonHomePageUni}>
+          <UniButton />
+        </Link>{" "}
       </Grid>
     </div>
   );

@@ -11,12 +11,12 @@ function RowComponent(props) {
     <div>
       <Grid container spacing={2}>
         <Grid item xs={12} md={12} style={{ marginBottom: "-120px" }}>
-          <Link
-            href={"/videos"}
-            className={styles}
-            style={{ marginTop: "-7rem" }}
-          >
-            <Image src={button} alt="button" width={300} height={200} />
+          <Link href={"/videos"} style={{ marginTop: "-7rem" }}>
+            <Image
+              src={button}
+              className={styles.ButtonHomepageWij}
+              alt="button"
+            />
           </Link>
         </Grid>
 

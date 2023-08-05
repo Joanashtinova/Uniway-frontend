@@ -317,8 +317,8 @@
   margin-bottom: 10px;
 }
 .Fostata {
-  height: 705px;
-  width: 500px;
+  height: 605px;
+  width: 550px;
   margin-top: 130px;
   margin-left: 40px;
 }
@@ -334,12 +334,23 @@
 .Nameri {
   margin-left: -40px;
   margin-top: 150px;
+  width: 700px;
+  height: 200px;
 }
 .dobriq {
   font-weight: 800;
   font-size: 30px;
   color: #adf7b6;
   margin-left: 20px;
+}
+.ButtonHomePageUni {
+  margin-left: 900px;
+  margin-top: -270px;
+  width: 260px;
+}
+.ButtonHomepageWij {
+  height: 200px;
+  width: 300px;
 }
 
 @media screen and (max-width: 600px) {
@@ -356,11 +367,16 @@
   }
   .Fostata {
     margin-top: -13px;
-    width: 300px;
+    width: 265px;
     margin-left: 30px;
     margin-right: 10px;
   }
-
+  .ButtonHomepageWij {
+    width: 170px;
+    height: 140px;
+    margin-bottom: 15px;
+    margin-top: -40px;
+  }
   .dobriq {
     font-size: 19px;
 
@@ -369,12 +385,16 @@
   }
   .Nameri {
     margin-top: 120px;
-    height: 300px;
-    width: 400px;
+    height: 100px;
+    width: 370px;
 
-    margin-left: 0px;
+    margin-left: 10px;
   }
-
+  .ButtonHomePageUni {
+    margin-top: 20px;
+    margin-left: 130px;
+    width: 170px;
+  }
   .buttonWrapper {
     flex: 1 0 50%;
     margin-bottom: 10px;
