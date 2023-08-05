@@ -317,8 +317,8 @@
   margin-bottom: 10px;
 }
 .Fostata {
-  height: 605px;
-  width: 550px;
+  height: 705px;
+  width: 500px;
   margin-top: 130px;
   margin-left: 40px;
 }
@@ -329,6 +329,7 @@
   color: #adf7b6;
   margin-right: 10px;
   margin-left: 110px;
+  font-size: 30px;
 }
 .Nameri {
   margin-left: -40px;
@@ -336,8 +337,9 @@
 }
 .dobriq {
   font-weight: 800;
-
+  font-size: 30px;
   color: #adf7b6;
+  margin-left: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -353,23 +355,24 @@
     margin-bottom: 35px;
   }
   .Fostata {
-    margin-top: 300px;
-
-    margin-left: 10px;
+    margin-top: -13px;
+    width: 300px;
+    margin-left: 30px;
     margin-right: 10px;
   }
 
   .dobriq {
-    font-size: 20px;
+    font-size: 19px;
 
     font-weight: 800;
     margin-left: 30px;
   }
   .Nameri {
-    margin-top: 100px;
-    position: absolute;
-    width: 370px;
-    margin-left: 13px;
+    margin-top: 120px;
+    height: 300px;
+    width: 400px;
+
+    margin-left: 0px;
   }
 
   .buttonWrapper {

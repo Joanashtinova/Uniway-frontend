@@ -21,9 +21,15 @@ export default function Videos(pros) {
     // Filter videos that have the university property
     const universityVideos = videosData.filter((video) => video.university);
 
+    // Get unique university names using Set
+    const uniqueUniversities = [
+      ...new Set(universityVideos.map((x) => x.university)),
+    ];
+
     setVideos(universityVideos);
     setFilteredVideos(universityVideos);
-    setUniversities(universityVideos.map((x) => x.university));
+    console.log("universities", uniqueUniversities);
+    setUniversities(uniqueUniversities);
   };
 
   useLayoutEffect(() => {
@@ -44,17 +50,19 @@ export default function Videos(pros) {
           return (
             <Grid item xs={12} key={university} style={{ marginTop: "120px" }}>
               <h3 className={styles.zaglawieuni}>{university}</h3>
-              {filteredVideos
-                .filter((video) => video.university === university)
-                .map((video) => (
-                  <Grid item xs={12} md={3} key={video.id}>
-                    <Video
-                      title={video.title}
-                      image={video.tumbnail_url}
-                      id={video.id}
-                    />
-                  </Grid>
-                ))}
+              <Grid container spacing={3}>
+                {filteredVideos
+                  .filter((video) => video.university === university)
+                  .map((video) => (
+                    <Grid item xs={12} md={3} key={video.id}>
+                      <Video
+                        title={video.title}
+                        image={video.tumbnail_url}
+                        id={video.id}
+                      />
+                    </Grid>
+                  ))}
+              </Grid>
             </Grid>
           );
         })}

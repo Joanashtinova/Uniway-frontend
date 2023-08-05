@@ -135,7 +135,7 @@ function HomeComponent() {
       >
         <Grid item xs={12} md={6} sx={{ order: { xs: 2, md: 0 } }}>
           <div className={styles.Fostata}>
-            <Image src={Fostata} width={300} height={300} layout="responsive" />
+            <Image src={Fostata} layout="responsive" />
           </div>
         </Grid>
         <Grid item xs={12} md={6} id="secondGrid">
