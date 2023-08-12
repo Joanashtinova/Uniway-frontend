@@ -163,21 +163,27 @@ function HomeComponent() {
           height: "100vh",
         }}
       >
-        <div className={styles.Snimka}>
-          <Image src={Buf} layout="responsive" />
-        </div>
-        <Grid item xs={12} md={6} id="secondGrid">
-          <Image src={Compasyt} className={styles.Compasyt} />
-          <Grid>
+        <Grid item xs={12} md={6}>
+          <div style={{ height: 300 }}>
+            <Image src={Compasyt} className={styles.Compasyt} />
+          </div>
+          <div>
             <h3 className={styles.Stanetechast}>
               Станете част от една смела мисия. <br />
               Ако искате вашия опит и знания да се превърнат в нечий ,,компас”
               към бъдещето свържете се с нас на
             </h3>
-            <h2 className={styles.email}>uniway.bg@gmail.com</h2>
-            <h3 className={styles.ili}> или в инстаграм на </h3>
-            <h2 className={styles.instagram}>uniway_bg</h2>
-          </Grid>
+            <div>
+              <h2 className={styles.email}>uniway.bg@gmail.com</h2>
+              <h3 className={styles.ili}> или в инстаграм на </h3>
+              <h2 className={styles.instagram}>uniway_bg</h2>
+            </div>
+          </div>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <div className={styles.Snimka}>
+            <Image src={Buf} layout="responsive" />
+          </div>
         </Grid>
       </Grid>
     </div>
