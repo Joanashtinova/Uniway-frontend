@@ -352,6 +352,17 @@
   height: 200px;
   width: 300px;
 }
+.Snimka {
+  width: 450px;
+  margin-top: 170px;
+  margin-left: 1000px;
+}
+.Compasyt {
+  margin-top: -900px;
+  width: 680px;
+  height: 340px;
+  margin-left: 50px;
+}
 
 @media screen and (max-width: 600px) {
   .video {
@@ -365,6 +376,13 @@
     margin-left: 45px;
     margin-bottom: 35px;
   }
+  .Compasyt {
+    width: 310px;
+    height: 170px;
+    margin-top: -400px;
+    margin-left: 50px;
+  }
+
   .Fostata {
     margin-top: -13px;
     width: 265px;
