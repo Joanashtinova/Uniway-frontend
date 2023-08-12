@@ -26,6 +26,8 @@ import Fostata from "../public/images/fostata.png";
 import Nameri from "../public/images/nameri.png";
 import UniButton from "./UI elemnts/buttonUni";
 import Link from "next/link";
+import Buf from "../public/images/bufff.png";
+import Compasyt from "../public/images/kompasyt.png";
 
 function HomeComponent() {
   const [videos, setVideos] = useState([]);
@@ -151,6 +153,22 @@ function HomeComponent() {
         <Link href={"/universities"} className={styles.ButtonHomePageUni}>
           <UniButton />
         </Link>{" "}
+      </Grid>
+      <Grid
+        container
+        spacing={2}
+        style={{
+          background: "#0b3954",
+          marginTop: "0px",
+          height: "100vh",
+        }}
+      >
+        <div className={styles.Snimka}>
+          <Image src={Buf} layout="responsive" />
+        </div>
+        <Grid item xs={12} md={6} id="secondGrid">
+          <Image src={Compasyt} className={styles.Compasyt} />
+        </Grid>
       </Grid>
     </div>
   );
