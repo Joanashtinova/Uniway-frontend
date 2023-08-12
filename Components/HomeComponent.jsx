@@ -168,6 +168,16 @@ function HomeComponent() {
         </div>
         <Grid item xs={12} md={6} id="secondGrid">
           <Image src={Compasyt} className={styles.Compasyt} />
+          <Grid>
+            <h3 className={styles.Stanetechast}>
+              Станете част от една смела мисия. <br />
+              Ако искате вашия опит и знания да се превърнат в нечий ,,компас”
+              към бъдещето свържете се с нас на
+            </h3>
+            <h2 className={styles.email}>uniway.bg@gmail.com</h2>
+            <h3 className={styles.ili}> или в инстаграм на </h3>
+            <h2 className={styles.instagram}>uniway_bg</h2>
+          </Grid>
         </Grid>
       </Grid>
     </div>

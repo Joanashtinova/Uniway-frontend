@@ -363,7 +363,30 @@
   height: 340px;
   margin-left: 50px;
 }
-
+.Stanetechast {
+  color: #4aa9b4;
+  margin-top: -300px;
+  font-weight: 800;
+  margin-left: 70px;
+}
+.email {
+  font-weight: 800;
+  margin-left: 370px;
+  color: #ecf79d;
+  margin-top: -40px;
+}
+.ili {
+  color: #4aa9b4;
+  margin-left: 70px;
+  font-weight: 800;
+  margin-top: -14px;
+}
+.instagram {
+  font-weight: 800;
+  margin-left: 360px;
+  color: #ecf79d;
+  margin-top: -44px;
+}
 @media screen and (max-width: 600px) {
   .video {
     height: 300px;
