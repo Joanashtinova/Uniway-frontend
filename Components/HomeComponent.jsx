@@ -28,6 +28,9 @@ import UniButton from "./UI elemnts/buttonUni";
 import Link from "next/link";
 import Buf from "../public/images/bufff.png";
 import Compasyt from "../public/images/kompasyt.png";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 function HomeComponent() {
   const [videos, setVideos] = useState([]);
@@ -176,7 +179,11 @@ function HomeComponent() {
             <div>
               <h2 className={styles.email}>uniway.bg@gmail.com</h2>
               <h3 className={styles.ili}> или в инстаграм на </h3>
-              <h2 className={styles.instagram}>uniway_bg</h2>
+              <h2 className={styles.instagram}>
+                <a href="https://instagram.com/uniway_bg/">
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a>
+              </h2>
             </div>
           </div>
         </Grid>

@@ -391,6 +391,9 @@
   color: #ecf79d;
   margin-top: -44px;
 }
+.instagram a {
+color: #ecf79d;
+}
 @media screen and (max-width: 600px) {
   .video {
     height: 300px;
