@@ -386,13 +386,14 @@
   margin-left: 150px;
 }
 .instagram {
-  font-weight: 300;
+  font-weight: 200;
   margin-left: 360px;
   color: #ecf79d;
   margin-top: -44px;
 }
 .instagram a {
 color: #ecf79d;
+font-weight: 200px;
 }
 @media screen and (max-width: 600px) {
   .video {
