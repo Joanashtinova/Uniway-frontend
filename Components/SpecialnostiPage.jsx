@@ -41,12 +41,13 @@ export default function Videos(pros) {
         top: "0",
         position: "absolute",
         minWidth: "98.9vw",
+        marginTop: "0px",
       }}
     >
       {specialnost.map((specialnost) => (
-        <div key={specialnost} style={{ marginTop: "150px" }}>
+        <div key={specialnost} style={{ marginTop: "159px" }}>
           <h3 className={styles.ButtonSpez}>{specialnost}</h3>
-          <Grid container spacing={3}>
+          <Grid container spacing={-17} style={{ margin: "0 auto" }}>
             {filteredVideos
               .filter((video) => video.specialnost === specialnost)
               .map((video) => (
