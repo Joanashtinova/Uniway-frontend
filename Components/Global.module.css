@@ -227,7 +227,6 @@
   margin-left: 30px;
   padding: 20px;
   font-size: 40px;
-  margin-top: 70px;
 }
 .ButtonSpez {
   font-weight: 900;
@@ -356,32 +355,32 @@
 }
 .Compasyt {
   margin-top: 130px;
-  width: 680px;
-  height: 340px;
+  width: 85vh;
+  height: 45vh;
   margin-left: 50px;
 }
 .Stanetechast {
   color: #4aa9b4;
-  margin-top: 150px;
+  margin-top: 20vh;
   font-weight: 800;
-  margin-left: 70px;
+  margin-left: 10vh;
 }
 .email {
   font-weight: 800;
-  margin-left: 370px;
+  margin-left: 47vh;
   color: #ecf79d;
-  margin-top: -44px;
+  margin-top: -6vh;
 }
 .ili {
   color: #4aa9b4;
-  margin-left: 70px;
+  margin-left: 10vh;
   font-weight: 800;
-  margin-top: -14px;
+  margin-top: -2vh;
 }
 .Snimka {
-  margin-top: 200px;
-  width: 400px;
-  margin-left: 150px;
+  margin-top: 25vh;
+  width: 55vh;
+  margin-left: 30vh;
 }
 .instagram a {
 color: #ecf79d;
@@ -407,42 +406,42 @@ height: 20px;
     color: #4aa9b4;
     font-weight: 800;
     font-size: 15px;
-    margin-top: -17px;
+    margin-top: -2vh;
     width: 350px;
-    margin-left: 30px;
+    margin-left: 3vh;
   }
   .email {
     font-weight: 800;
-    margin-top: -10px;
+    margin-top: -4.3vh;
     color: #ecf79d;
-    margin-left: 50px;
-    font-size: 20px;
+    margin-left: 26vh;
+    font-size: 17px;
   }
   .ili {
     color: #4aa9b4;
     font-size: 15px;
     font-weight: 800;
-    margin-left: 40px;
-    margin-top: -7px;
+    margin-left: 6vh;
+    margin-top: -1.2vh;
   }
   .instagram {
     font-weight: 800;
-    font-size: 20px;
+    font-size: 17px;
     color: #ecf79d;
-    margin-left: 200px;
-    margin-top: -30px;
+    margin-left: 29vh;
+    margin-top: -4.2vh;
   }
   .Compasyt {
-    width: 340px;
-    height: 160px;
+    width: 50vh;
+    height: 25vh;
 
-    margin-left: 40px;
+    margin-left: 5vh;
     margin-top: 120px;
   }
   .Snimka {
-    width: 200px;
-    margin-left: 130px;
-    margin-top: -5px;
+    width: 30vh;
+    margin-left: 20vh;
+    margin-top: 20vh;
     margin: -5px auto 0;
   }
   .Fostata {
