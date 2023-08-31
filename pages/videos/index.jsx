@@ -46,43 +46,75 @@ export default function Videos() {
   }, [videos, query]);
 
   return (
-    <div className={styles.container}>
-      <div className={styles.background}>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={12} style={{ marginTop: "150px" }}>
-            <h5
-              style={{
-                marginLeft: "30px",
-                fontWeight: "90px",
-                color: "#1d3354",
-              }}
-            >
-              Открий своя/та:
-            </h5>
-            <div className={styles.buttonContainer}>
-              <div className={styles.buttonWrapper}>
-                <Link href={"/universities"}>
-                  <ButtonUni height={51} width={280} />
-                </Link>{" "}
-              </div>
-              <div className={styles.buttonWrapper}>
-                <Link href={"/specialnosti"}>
-                  <ButtonSpec height={51} width={280} />
-                </Link>
-              </div>
+    <div
+      className={styles.background}
+      style={{
+        display: "flex",
+        justifyContent: "center",
+      }}
+    >
+      <Grid
+        container
+        spacing={-15}
+        style={{
+          display: "flex",
+          justifyContent: "center", // Center content horizontally
+          alignItems: "center", // Center content vertically
+        }}
+      >
+        <Grid
+          item
+          xs={12}
+          md={12}
+          style={{
+            marginTop: "150px",
+            // display: "flex",
+            // justifyContent: "center", // Center content horizontally
+            // alignItems: "center", // Center content vertically
+          }}
+        >
+          <h5
+            style={{
+              marginLeft: "30px",
+              fontWeight: "90px",
+              color: "#1d3354",
+            }}
+          >
+            Открий своя/та:
+          </h5>
+          <div className={styles.buttonContainer}>
+            <div className={styles.buttonWrapper}>
+              <Link href={"/universities"}>
+                <ButtonUni height={51} width={280} />
+              </Link>{" "}
             </div>
-          </Grid>
-          {filteredVideos.map((video) => (
-            <Grid item xs={12} md={3} key={video.id}>
-              <Video
-                title={video.title}
-                image={video.tumbnail_url}
-                id={video.id}
-              />
-            </Grid>
-          ))}
+            <div className={styles.buttonWrapper}>
+              <Link href={"/specialnosti"}>
+                <ButtonSpec height={51} width={280} />
+              </Link>
+            </div>
+          </div>
         </Grid>
-      </div>
+        {filteredVideos.map((video) => (
+          <Grid
+            item
+            xs={12}
+            md={3}
+            key={video.id}
+            style={{
+              display: "flex",
+              justifyContent: "center", // Center content horizontally
+              alignItems: "center", // Center content vertically
+            }}
+          >
+            <Video
+              title={video.title}
+              image={video.tumbnail_url}
+              id={video.id}
+            />
+          </Grid>
+        ))}
+      </Grid>
     </div>
   );
 }

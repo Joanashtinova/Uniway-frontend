@@ -43,30 +43,33 @@ export default function Videos(pros) {
         top: "0",
         position: "absolute",
         minWidth: "98.9vw",
+        marginTop: "0px",
       }}
     >
-      <Grid style={{ marginTop: "40px" }} container spacing={2}>
-        {universities.map((university) => {
-          return (
-            <Grid item xs={12} key={university} style={{ marginTop: "120px" }}>
-              <h3 className={styles.zaglawieuni}>{university}</h3>
-              <Grid container spacing={3}>
-                {filteredVideos
-                  .filter((video) => video.university === university)
-                  .map((video) => (
-                    <Grid item xs={12} md={3} key={video.id}>
-                      <Video
-                        title={video.title}
-                        image={video.tumbnail_url}
-                        id={video.id}
-                      />
-                    </Grid>
-                  ))}
-              </Grid>
-            </Grid>
-          );
-        })}
-      </Grid>
+      {universities.map((university) => (
+        <div key={university} style={{ marginTop: "159px" }}>
+          <h3 className={styles.zaglawieuni}>{university}</h3>
+          <Grid container spacing={-17} style={{ margin: "0 auto" }}>
+            {filteredVideos
+              .filter((video) => video.university === university)
+              .map((video) => (
+                <Grid
+                  item
+                  xs={12}
+                  md={3}
+                  key={video.id}
+                  className={styles.VideoUni}
+                >
+                  <Video
+                    title={video.title}
+                    image={video.tumbnail_url}
+                    id={video.id}
+                  />
+                </Grid>
+              ))}
+          </Grid>
+        </div>
+      ))}
     </div>
   );
 }

@@ -37,7 +37,7 @@ export default function VideoPage(props) {
         backgroundColor: "#087e8b",
         top: "0",
         position: "absolute",
-        minWidth: "100vw",
+        // minWidth: "100vw",
       }}
     >
       <div
@@ -74,7 +74,7 @@ export default function VideoPage(props) {
               style={{
                 fontWeight: "700",
                 fontSize: "35px",
-                color: "#83c5be",
+                color: "#b3e7e1",
               }}
             >
               {video.title}

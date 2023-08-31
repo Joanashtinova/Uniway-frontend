@@ -9,7 +9,7 @@ import Image from "next/image";
 function RowComponent(props) {
   return (
     <div>
-      <Grid container spacing={2}>
+      <Grid container spacing={0}>
         <Grid item xs={12} md={12} style={{ marginBottom: "-120px" }}>
           <Link href={"/videos"} style={{ marginTop: "-7rem" }}>
             <Image
