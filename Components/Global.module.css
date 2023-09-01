@@ -383,12 +383,12 @@
   margin-left: 30vh;
 }
 .instagram a {
-color: #ecf79d;
-font-weight: 200px;
-font-size: 35px;
-margin-top: -30px;
-margin-left: 370px;
-height: 20px;
+  color: #ecf79d;
+  font-weight: 200px;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-left: 48vh;
+  height: 5vh;
 }
 @media screen and (max-width: 600px) {
   .video {
@@ -405,6 +405,7 @@ height: 20px;
   .Stanetechast {
     color: #4aa9b4;
     font-weight: 800;
+<<<<<<< Updated upstream
     font-size: 15px;
     margin-top: -2vh;
     width: 350px;
@@ -416,11 +417,44 @@ height: 20px;
     color: #ecf79d;
     margin-left: 26vh;
     font-size: 17px;
+=======
+<<<<<<< HEAD
+    font-size: 16px;
+    margin-top: -1vh;
+    width: 350px;
+    position: absolute;
+    left: 40%;
+    transform: translateX(-50%);
+  }
+  .email {
+    font-weight: 800;
+    margin-top: 10vh;
+    color: #ecf79d;
+    margin-left: 50px;
+    font-size: 20px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 30%;
+=======
+    font-size: 15px;
+    margin-top: -2vh;
+    width: 350px;
+    margin-left: 3vh;
+  }
+  .email {
+    font-weight: 800;
+    margin-top: -4.3vh;
+    color: #ecf79d;
+    margin-left: 26vh;
+    font-size: 17px;
+>>>>>>> 1cd1031c828e0b023a0df6cb8416c62e513dbff7
+>>>>>>> Stashed changes
   }
   .ili {
     color: #4aa9b4;
     font-size: 15px;
     font-weight: 800;
+<<<<<<< Updated upstream
     margin-left: 6vh;
     margin-top: -1.2vh;
   }
@@ -442,6 +476,54 @@ height: 20px;
     width: 30vh;
     margin-left: 20vh;
     margin-top: 20vh;
+=======
+<<<<<<< HEAD
+    margin-left: 40px;
+    margin-top: 13.3vh;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 30%;
+  }
+  .instagram {
+    color: #ecf79d;
+    margin-left: -18vh;
+    margin-top: -30px;
+  }
+  .Compasyt {
+    width: 50vh;
+    height: 26vh;
+
+    margin-left: 40px;
+    margin-top: 15vh;
+  }
+  .Snimka {
+    width: 200px;
+    margin-left: 130px;
+    margin-top: 30vh;
+=======
+    margin-left: 6vh;
+    margin-top: -1.2vh;
+  }
+  .instagram {
+    font-weight: 800;
+    font-size: 17px;
+    color: #ecf79d;
+    margin-left: 29vh;
+    margin-top: -4.2vh;
+  }
+  .Compasyt {
+    width: 50vh;
+    height: 25vh;
+
+    margin-left: 5vh;
+    margin-top: 120px;
+  }
+  .Snimka {
+    width: 30vh;
+    margin-left: 20vh;
+    margin-top: 20vh;
+>>>>>>> 1cd1031c828e0b023a0df6cb8416c62e513dbff7
+>>>>>>> Stashed changes
     margin: -5px auto 0;
   }
   .Fostata {
