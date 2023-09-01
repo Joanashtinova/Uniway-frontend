@@ -181,7 +181,7 @@ function HomeComponent() {
               <h3 className={styles.ili}> или в инстаграм на </h3>
               <h2 className={styles.instagram}>
                 <a href="https://instagram.com/uniway_bg/">
-                  <h3>uniway_bg</h3>
+                  <h3 className={styles.Uniway_bg}>uniway_bg</h3>
                 </a>
               </h2>
             </div>
