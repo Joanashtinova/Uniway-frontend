@@ -407,29 +407,16 @@
     font-weight: 800;
 
     font-size: 15px;
-    margin-top: -2vh;
+    margin-top: -4%;
     width: 350px;
-    margin-left: 3vh;
+    margin-left: 10%;
   }
-  .email {
-    font-weight: 800;
 
-    color: #ecf79d;
-
-    font-size: 17px;
-
-    font-size: 16px;
-    margin-top: -1vh;
-    width: 350px;
-    /* position: absolute;
-    left: 40%;
-    transform: translateX(-50%); */
-  }
   .email {
     font-weight: 800;
     margin-top: -4.5vh;
     color: #ecf79d;
-    margin-left: 50px;
+    margin-left: 40%;
     font-size: 18px;
     margin-left: 25vh;
   }
@@ -458,8 +445,8 @@
     width: 50vh;
     height: 25vh;
 
-    margin-left: 5vh;
-    margin-top: 120px;
+    margin-left: 15%;
+    margin-top: 30%px;
   }
   .Snimka {
     width: 28.5vh;
