@@ -301,7 +301,6 @@
 .vvvideos {
   height: auto;
   /* margin-bottom: 500px; */
-  margin-top: 500px;
 }
 .buttonContainer {
   display: flex;
@@ -370,6 +369,7 @@
   margin-left: 47vh;
   color: #ecf79d;
   margin-top: -6vh;
+  font-size: 30px;
 }
 .ili {
   color: #4aa9b4;
@@ -382,11 +382,16 @@
   width: 55vh;
   margin-left: 30vh;
 }
-.instagram a {
+.Uniway_bg {
+  color: #ecf79d;
+  font-weight: 800;
+  font-size: 30px;
+}
+.instagram {
   color: #ecf79d;
   font-weight: 200px;
   font-size: 35px;
-  margin-top: 20px;
+  margin-top: -40px;
   margin-left: 48vh;
   height: 5vh;
 }
