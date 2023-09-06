@@ -420,11 +420,10 @@
 
   .email {
     font-weight: 800;
-    margin-top: -7%;
+    margin-top: -0.6rem;
     color: #ecf79d;
-    margin-left: 40%;
     font-size: 17px;
-    margin-left: 45%;
+    margin-left: 6rem;
   }
 
   .ili {
@@ -432,15 +431,15 @@
     font-size: 15px;
     font-weight: 900;
 
-    margin-left: 10%;
-    margin-top: -2%;
+    margin-left: 5rem;
+    margin-top: -0.5rem;
   }
   .instagram {
     font-weight: 900;
     font-size: 17px;
     color: #ecf79d;
-    margin-left: 47%;
-    margin-top: -28px;
+    margin-left: 15rem;
+    margin-top: -1.8rem;
   }
   .Uniway_bg {
     font-weight: 800;
@@ -455,12 +454,11 @@
     margin-top: 8rem;
   }
   .Snimka {
-    width: 48%;
-    margin-left: 15vh;
-    margin-top: -35%;
-    position: absolute;
-    transform: translateX(-50%);
-    left: 30%;
+    width: 12rem;
+    margin-left: 6rem;
+    margin-top: -1rem;
+    display: flex;
+    justify-content: center;
   }
 
   .Fostata {
