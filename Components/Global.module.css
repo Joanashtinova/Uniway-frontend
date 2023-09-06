@@ -353,29 +353,29 @@
   margin-top: 170px;
 }
 .Compasyt {
-  margin-top: 130px;
-  width: 85vh;
-  height: 45vh;
-  margin-left: 50px;
+  margin-top: 9rem;
+  width: 40rem;
+  height: 21rem;
+  margin-left: 4rem;
 }
 .Stanetechast {
   color: #4aa9b4;
-  margin-top: 20vh;
+  margin-top: 10rem;
   font-weight: 800;
-  margin-left: 10vh;
+  margin-left: 4.6rem;
 }
 .email {
   font-weight: 800;
-  margin-left: 47vh;
+  margin-left: 22rem;
   color: #ecf79d;
-  margin-top: -6vh;
+  margin-top: -2.7rem;
   font-size: 30px;
 }
 .ili {
   color: #4aa9b4;
-  margin-left: 10vh;
+  margin-left: 4.6rem;
   font-weight: 800;
-  margin-top: -2vh;
+  margin-top: -0.6rem;
 }
 .Snimka {
   margin-top: 25vh;
@@ -391,9 +391,8 @@
   color: #ecf79d;
   font-weight: 200px;
   font-size: 35px;
-  margin-top: -40px;
-  margin-left: 48vh;
-  height: 5vh;
+  margin-top: -2.5rem;
+  margin-left: 22.8rem;
 }
 @media screen and (max-width: 600px) {
   .video {
@@ -413,9 +412,10 @@
     font-weight: 900;
 
     font-size: 15px;
-    margin-top: -6%;
-    width: 87%;
-    margin-left: 10%;
+    margin-top: -9rem;
+    width: 19rem;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
   }
 
   .email {
@@ -448,11 +448,11 @@
     color: #ecf79d;
   }
   .Compasyt {
-    width: 80%;
-    height: 53%;
-
-    margin-left: 15%;
-    margin-top: 30%;
+    width: 20rem;
+    height: 10.8rem;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    margin-top: 8rem;
   }
   .Snimka {
     width: 48%;
