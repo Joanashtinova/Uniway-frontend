@@ -18,6 +18,9 @@ function Navbar() {
           <Link href={"/videos"} className={styles.videobutton}>
             Видеа
           </Link>{" "}
+          <Link href={"/login"} className={styles.login}>
+            Профил
+          </Link>{" "}
           <SearchComponent /> {/* Add the SearchComponent here */}
         </nav>
       </div>
