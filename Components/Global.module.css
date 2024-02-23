@@ -186,8 +186,10 @@
   margin-top: -7rem;
 }
 .genZgirl {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   margin-left: 4rem;
+  height: 0.5rem;
+  width: 1rem;
 }
 .DivIzgelaj {
   width: 90%;
@@ -196,7 +198,7 @@
 }
 
 .DivGenZgirl {
-  width: 550px;
+  width: 500px;
   height: 970px;
   margin-left: 9px;
 }
