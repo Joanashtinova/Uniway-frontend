@@ -10,7 +10,12 @@ function RowComponent(props) {
   return (
     <div>
       <Grid container spacing={0}>
-        <Grid item xs={12} md={12} style={{ marginBottom: "-120px" }}>
+        <Grid
+          item
+          xs={12}
+          md={12}
+          style={{ marginBottom: "-120px", marginLeft: "50px" }}
+        >
           <Link href={"/videos"} style={{ marginTop: "-7rem" }}>
             <Image
               src={button}

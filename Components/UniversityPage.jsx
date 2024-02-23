@@ -49,7 +49,7 @@ export default function Videos(pros) {
       {universities.map((university) => (
         <div key={university} style={{ marginTop: "159px" }}>
           <h3 className={styles.zaglawieuni}>{university}</h3>
-          <Grid container spacing={-17} style={{ margin: "0 auto" }}>
+          <Grid container spacing={-22} style={{ margin: "0 auto" }}>
             {filteredVideos
               .filter((video) => video.university === university)
               .map((video) => (
